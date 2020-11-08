@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Cube", "Cube\Cube.dwproj", "{D733B75C-C91D-4734-A559-2F69163E1FA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC79BCA-F4C6-4563-8121-4F2F8062DB2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Debug|Any CPU.ActiveCfg = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Debug|Any CPU.Build.0 = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Debug|Any CPU.Deploy.0 = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Development|Any CPU.ActiveCfg = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Development|Any CPU.Build.0 = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Development|Any CPU.Deploy.0 = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Release|Any CPU.ActiveCfg = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Release|Any CPU.Build.0 = Development
+		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Release|Any CPU.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0586DEC-1222-4B28-8EAE-601A238C639B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1071 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7aad07c4-7a91-4d39-944b-044aeb5e4087" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>WOT</ID>
+  <Name>WOT</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="17" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8687" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="32411" y="9578" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shells" left="20" top="8535" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Shells" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TankStats" left="5420" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_TankStats" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Costs" left="10820" top="6608" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Costs" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="16820" top="1270" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Users" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Operations" left="16820" top="5549" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Operations" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tanks" left="5420" top="6819" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Tanks" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserStats" left="22220" top="0" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_UserStats" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Weapons" left="20" top="3410" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Weapons" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TTCs" left="5420" top="11521" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_TTCs" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="5636" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ShellWeapon]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="1" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="6135" />
+              <point x="1520" y="8535" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="4119" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_StatTank]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6920" y="6819" />
+              <point x="6920" y="4419" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8120" top="7571" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_CostTank]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8420" y="7970" />
+              <point x="10820" y="7970" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17921" top="2650" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_OperationUser]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18320" y="3149" />
+              <point x="18320" y="5549" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="19520" top="1810" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_StatUser]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="13" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="19820" y="2209" />
+              <point x="22220" y="2209" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="8622" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_TTCTank]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="9" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6920" y="9121" />
+              <point x="6920" y="11521" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="4472" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="3898" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_WeaponTank]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="8" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5420" y="7970" />
+              <point x="4220" y="7970" />
+              <point x="4220" y="4772" />
+              <point x="3020" y="4772" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-8687</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5000</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="3b1153be-63fb-4cf5-abd3-06121d0bc112">
+      <ID>Weapons</ID>
+      <Name>Weapons</Name>
+      <DimensionID>Weapons</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="88ca523b-7a2f-4f0c-87a1-7479e005337b">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a502df0-947b-416f-bbe0-3459c188a0e8">
+          <AttributeID>Tank Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe0a753c-f7ba-4f0e-89a7-523f75269443">
+          <AttributeID>Caliber</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51a12e5b-b6b9-45e7-9929-f8407cef967b">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6a5a6c2e-16c4-452d-ad6c-02efa082363f">
+      <ID>Tanks</ID>
+      <Name>Tanks</Name>
+      <DimensionID>Tanks</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0d0ca135-15e3-4806-b4bd-6d6ae29a7d36">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7be1782d-44e2-42f1-8eec-51a441070682">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4555f1de-b98b-45a6-a7ca-40dc9a0b4994">
+          <AttributeID>LVL</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9884add7-3f79-4985-862a-0a99cea1eba8">
+      <ID>Users</ID>
+      <Name>Users</Name>
+      <DimensionID>Users</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="715ec717-5d72-40e9-9b83-6df8c917c8c5">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61f67118-b89c-4115-a2ef-7c77c806863e">
+          <AttributeID>Nickname</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="928d5d40-3d3d-4ef1-9c96-0c26e5f7ced6">
+      <ID>Costs</ID>
+      <Name>Costs</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="68df6097-a051-4849-839d-15e128015fc8">
+          <ID>Value</ID>
+          <Name>Value</Name>
+          <Source dwd:design-time-name="09be21f2-b4e0-4698-a814-2d676ee7608d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="96245fc3-8999-4e46-86ab-8144ffe09778">
+              <TableID>dbo_Costs</TableID>
+              <ColumnID>Value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="02982d44-3a5e-4612-81dc-c86e5a7ba823">
+          <ID>Число Costs</ID>
+          <Name>Число Costs</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="3e487b97-7752-4266-b6d5-c40af50f7ae0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="be2c2246-4a7d-4062-a92c-e01a2e40881a">
+              <TableID>dbo_Costs</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="49a49ac8-0ec4-4eb0-b35a-d84c5f1d6f92">
+          <CubeDimensionID>Tanks</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ac1d99cd-fb03-4826-b2cb-f7f2f72fff5c">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2817f99b-f818-45d4-b717-0726136565ab">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f9e9fb39-4cb5-474b-8cf2-d3726fc2d1a5">
+                    <TableID>dbo_Costs</TableID>
+                    <ColumnID>TankId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="69b96488-9a93-4459-8b00-63e54700d449">
+      <ID>Operations</ID>
+      <Name>Operations</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="049e19a0-3867-4171-b1f6-4c6c1c17045a">
+          <ID>TYPE</ID>
+          <Name>TYPE</Name>
+          <Source dwd:design-time-name="3f65ef28-70a6-48d8-809d-366778928bb3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="af735f66-9108-4cf9-a06c-c70fdf6a8443">
+              <TableID>dbo_Operations</TableID>
+              <ColumnID>TYPE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4dfa6657-756c-4177-9280-81dd380bb708">
+          <ID>Value - Operations</ID>
+          <Name>Value - Operations</Name>
+          <Source dwd:design-time-name="f433b43e-a3b1-4269-b4a6-a7f8dd2790f9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="81cd9835-4885-445f-88fd-f99940b23b79">
+              <TableID>dbo_Operations</TableID>
+              <ColumnID>Value</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4a707a65-0432-468f-91c0-37328eb94c5c">
+          <ID>Число Operations</ID>
+          <Name>Число Operations</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d1f2894f-9da9-4ec7-bb8d-adc49721c0d9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a5ad7d16-3a87-4c96-b059-4fa84395d76f">
+              <TableID>dbo_Operations</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a8350f75-3a10-4d95-89d6-e7b406fe8b49">
+          <CubeDimensionID>Users</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="485c3d51-2de3-42d1-be4f-d94b15b73046">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8c35a42a-e15f-4297-ae47-945d5657fecb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f87f4b03-2535-4443-9ec3-02607e9fca68">
+                    <TableID>dbo_Operations</TableID>
+                    <ColumnID>UserId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="d535ac54-0270-425c-a839-fbc31bf8e7dc">
+      <ID>Shells</ID>
+      <Name>Shells</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="54f17d00-b238-4bb1-a721-6b701535d3ae">
+          <ID>Type - Shells</ID>
+          <Name>Type - Shells</Name>
+          <Source dwd:design-time-name="5d02340f-2681-470a-b493-c33323d04c45">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2e3ddd89-6a7b-4fdb-a390-21a75bbd9fdb">
+              <TableID>dbo_Shells</TableID>
+              <ColumnID>Type</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ce90140-237c-433c-b6ad-8e27fbf90141">
+          <ID>Penetration</ID>
+          <Name>Penetration</Name>
+          <Source dwd:design-time-name="0e2c6c62-f76f-4121-95a1-c0e2fc67eb67">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ea1b7985-566c-466d-91e0-7a0d04eff2e2">
+              <TableID>dbo_Shells</TableID>
+              <ColumnID>Penetration</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1a709fdb-e3ae-4ccc-969f-e689f99e9ecf">
+          <ID>Speed</ID>
+          <Name>Speed</Name>
+          <Source dwd:design-time-name="0d07b039-5c11-40f8-a246-63633cee414e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="36dc0903-282b-42c6-868c-3bb403ae0b54">
+              <TableID>dbo_Shells</TableID>
+              <ColumnID>Speed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a4b06ab4-abde-4205-8ba8-a3b831b8c253">
+          <ID>Velocity</ID>
+          <Name>Velocity</Name>
+          <Source dwd:design-time-name="cb3e2a28-3da3-495f-869b-de502b59436c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7f89f2fc-9f0b-421a-b0f6-7ce70cb11556">
+              <TableID>dbo_Shells</TableID>
+              <ColumnID>Velocity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="916eb51c-a0d6-47fd-8447-8181d7dfde42">
+          <ID>Cost</ID>
+          <Name>Cost</Name>
+          <Source dwd:design-time-name="fe867a2b-3e7a-4642-9afb-6aa3df864cf1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="56e011cf-c69a-47cc-b80d-9553b3db5a6d">
+              <TableID>dbo_Shells</TableID>
+              <ColumnID>Cost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="61c5665a-0fcb-4696-a2bf-2e2dafd767ea">
+          <ID>Число Shells</ID>
+          <Name>Число Shells</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="82883cc1-fb02-4d86-9d27-5ef2746642bb">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9fe023bf-4314-421a-8b13-23a232691c5a">
+              <TableID>dbo_Shells</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4538742d-7569-431f-87e2-e115abba250c">
+          <CubeDimensionID>Weapons</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5dcd44d0-3ede-4d78-a8a8-7153c69fb9a3">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="05ca3ecd-85cf-4989-923a-5d51a7ff5b63">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e10b608b-fc4e-45be-b6c9-a0d3365d6cc5">
+                    <TableID>dbo_Shells</TableID>
+                    <ColumnID>WeaponId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7a2a350b-c394-41da-9fca-16269d62371e">
+          <CubeDimensionID>Tanks</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="61f72b0d-571c-4565-b1a7-6820b98a1eb2">
+              <AttributeID>Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Weapons</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Tank Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="65a5c815-e78f-44e9-ba40-ed8e35e9267a">
+      <ID>Tank Stats</ID>
+      <Name>Tank Stats</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2d86dbc1-7773-4e4b-b052-891437c07c38">
+          <ID>AVG Damage</ID>
+          <Name>AVG Damage</Name>
+          <Source dwd:design-time-name="d1d04e4d-3a38-409c-9a52-c51d9a9d0a64">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="25ffdc92-cf8f-47ee-9b51-a60e7203362a">
+              <TableID>dbo_TankStats</TableID>
+              <ColumnID>AVGDamage</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9fd27cd1-d4de-49d8-81af-94b4d299da17">
+          <ID>Accuracy</ID>
+          <Name>Accuracy</Name>
+          <Source dwd:design-time-name="bc3eed28-7c16-4a6d-8a79-411044361996">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fc491566-f395-4c3c-bc23-c38d7493e66e">
+              <TableID>dbo_TankStats</TableID>
+              <ColumnID>Accuracy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c9f52e38-c72f-453d-baec-2c914dc0c756">
+          <ID>Winrate</ID>
+          <Name>Winrate</Name>
+          <Source dwd:design-time-name="c44da3de-5b97-483e-bc24-2a5e5f520acc">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b208734f-8356-4b17-99c7-5516d7a685d2">
+              <TableID>dbo_TankStats</TableID>
+              <ColumnID>Winrate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ded1663b-6eef-4925-91ff-11489344a179">
+          <ID>Matches</ID>
+          <Name>Matches</Name>
+          <Source dwd:design-time-name="fa8afd96-3d92-494f-b011-4f02e75a6efe">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a426326f-d6db-48aa-8d5d-cad9d4c6b9e0">
+              <TableID>dbo_TankStats</TableID>
+              <ColumnID>Matches</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ee2fe505-74c2-443f-a5fb-8f079f2be29f">
+          <ID>AVG Exp</ID>
+          <Name>AVG Exp</Name>
+          <Source dwd:design-time-name="d9f7c405-3522-4bb7-954c-149e623a28fb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4555def4-886a-4461-94f4-ef537f11854f">
+              <TableID>dbo_TankStats</TableID>
+              <ColumnID>AVGExp</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9e1e2085-d701-4fa1-ac4b-f3a4af2b4b7e">
+          <ID>Число Tank Stats</ID>
+          <Name>Число Tank Stats</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b6ae01b5-b5b7-4c4c-bc94-c2bb53417f34">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="24b7882f-40c5-48e2-96d5-9b6760ba420e">
+              <TableID>dbo_TankStats</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e64d2fe0-3782-45b3-bc31-f8b6c903fd56">
+          <CubeDimensionID>Tanks</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0151c101-105e-4ad9-8c09-a18da684e2ca">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2aedbada-0aa0-463e-826e-8ea5c6985b8b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce3dfbd8-6200-471f-9619-f4156338c544">
+                    <TableID>dbo_TankStats</TableID>
+                    <ColumnID>TankId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3e968164-5933-42df-a0e5-6090fd556ac6">
+      <ID>TT Cs</ID>
+      <Name>TT Cs</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="25cc7963-6f7b-44e3-ad36-79a55627a3c5">
+          <ID>Clocking</ID>
+          <Name>Clocking</Name>
+          <Source dwd:design-time-name="b40f020f-a448-4653-860e-d729c4d5e0b3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e8f5adb5-facc-4000-8e33-ea3fc5a18013">
+              <TableID>dbo_TTCs</TableID>
+              <ColumnID>Clocking</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ebce5e6b-1aa0-4e34-b22c-e9b59c10fea3">
+          <ID>Speed - TT Cs</ID>
+          <Name>Speed - TT Cs</Name>
+          <Source dwd:design-time-name="233f285b-5161-47c6-9f45-eb889d5e6d45">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3e118592-b187-4439-9d8b-02a4236ec494">
+              <TableID>dbo_TTCs</TableID>
+              <ColumnID>Speed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="31a52a5f-272f-405b-b237-a3fb0d8610e0">
+          <ID>Velocity - TT Cs</ID>
+          <Name>Velocity - TT Cs</Name>
+          <Source dwd:design-time-name="1caa4fc4-fafe-4bac-be4d-c9d055ed645e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="19737a64-9171-426a-97eb-4c2131cf3a69">
+              <TableID>dbo_TTCs</TableID>
+              <ColumnID>Velocity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c2b466f3-84b8-4d2a-ad42-e4e0077b3b31">
+          <ID>Engine Power</ID>
+          <Name>Engine Power</Name>
+          <Source dwd:design-time-name="bf44ab2c-b96e-4954-b1f0-ea38d7753ce5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="df93ec1c-70fb-4f97-bcdd-dfc9cd8bc1ee">
+              <TableID>dbo_TTCs</TableID>
+              <ColumnID>EnginePower</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1d8fa761-458d-4c73-82e1-09a2d273ca7d">
+          <ID>Weight</ID>
+          <Name>Weight</Name>
+          <Source dwd:design-time-name="5aaeb6ec-16a2-4042-991c-357e615da2d2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2cb9e79f-72df-498d-9162-c464213c7b79">
+              <TableID>dbo_TTCs</TableID>
+              <ColumnID>Weight</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f3dfb3d3-cb80-47b8-ad9f-7d67b35fcbbc">
+          <ID>Число TT Cs</ID>
+          <Name>Число TT Cs</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ad2e7b39-cd60-47b8-8e19-b446592ab00d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="df31c295-b38c-44e7-a032-f85d87033179">
+              <TableID>dbo_TTCs</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="415b4c80-7edf-4271-ac50-109ec808859d">
+          <CubeDimensionID>Tanks</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5d01b810-7175-4877-b225-0ad4152e00f0">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="63ce0247-0d31-4b27-85d2-73569bfae0aa">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3476a91a-5928-4b79-aa8c-2ed37547581c">
+                    <TableID>dbo_TTCs</TableID>
+                    <ColumnID>TankId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="57de5b15-0540-4249-95e1-e83155d6b575">
+      <ID>User Stats</ID>
+      <Name>User Stats</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="62e8a8c0-f458-4795-b411-c45973fa044c">
+          <ID>AVG Damage - User Stats</ID>
+          <Name>AVG Damage - User Stats</Name>
+          <Source dwd:design-time-name="e4126ce1-0a8a-447e-874c-5e011a45b1cd">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="edaa6e5b-1058-4fb2-8f82-936122263261">
+              <TableID>dbo_UserStats</TableID>
+              <ColumnID>AVGDamage</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="01f8378c-849f-4115-bfbf-aa680bd6364f">
+          <ID>Accuracy - User Stats</ID>
+          <Name>Accuracy - User Stats</Name>
+          <Source dwd:design-time-name="ee908e3b-cd5d-4871-9057-c7487d3171fe">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d07df04d-8fb7-4cf6-a478-7ace52c7c10c">
+              <TableID>dbo_UserStats</TableID>
+              <ColumnID>Accuracy</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2a7b4e96-0aab-4bfa-9b1f-1a2a1176a44a">
+          <ID>Winrate - User Stats</ID>
+          <Name>Winrate - User Stats</Name>
+          <Source dwd:design-time-name="ba7abd62-62d8-42b7-ba4b-0f3ffc1c72fd">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c2955b8e-c26c-4765-8287-be43394ed90e">
+              <TableID>dbo_UserStats</TableID>
+              <ColumnID>Winrate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8c9e5f29-b9be-4cb7-a01d-d3ffddfe4c4b">
+          <ID>Matches - User Stats</ID>
+          <Name>Matches - User Stats</Name>
+          <Source dwd:design-time-name="4fc9dac4-ad0b-45cf-ba40-8af9776a18f2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="df2631ba-0d5c-4498-9088-07b3dc52830c">
+              <TableID>dbo_UserStats</TableID>
+              <ColumnID>Matches</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1f25bb04-9782-45c5-a305-57757a992bc1">
+          <ID>AVG Exp - User Stats</ID>
+          <Name>AVG Exp - User Stats</Name>
+          <Source dwd:design-time-name="63ecd8a6-1d60-41c5-b7f5-87254a92f6b3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0063d3a8-64b7-4080-808e-eca9fbfdebe9">
+              <TableID>dbo_UserStats</TableID>
+              <ColumnID>AVGExp</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="46e034d2-4ab8-4984-88ed-0283bec216ce">
+          <ID>Число User Stats</ID>
+          <Name>Число User Stats</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c819d0de-4e28-4279-be73-d219ed918033">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4c35c778-15d2-495f-a2dd-e86b84b985c1">
+              <TableID>dbo_UserStats</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="09feaa9d-b781-4c78-bad7-6323b10a22f9">
+          <CubeDimensionID>Users</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4fdef118-fbc5-4101-bd10-57267602dc53">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1ecfd85d-9679-479c-ba9c-74447ce89f98">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dbb99ef5-246a-44b3-95ac-f371de4e24c9">
+                    <TableID>dbo_UserStats</TableID>
+                    <ColumnID>UserId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="9bcbd003-e6ba-42d8-8b49-3c540d6ebf4b">
+      <ID>Weapons</ID>
+      <Name>Weapons</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c915b118-2efe-4fab-bbb4-dad0e69afca6">
+          <ID>Type - Weapons</ID>
+          <Name>Type - Weapons</Name>
+          <Source dwd:design-time-name="27701ae4-8ff8-44e1-9c29-1b3625e65cbf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="89c139d8-a6f3-4866-bb85-7bdb54aa6b48">
+              <TableID>dbo_Weapons</TableID>
+              <ColumnID>Type</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b6db89d6-bd2e-4fe6-a5b1-65afdf473d3b">
+          <ID>Caliber</ID>
+          <Name>Caliber</Name>
+          <Source dwd:design-time-name="7580f91d-b7c3-465c-9c06-95a5182338c1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0cbb7b7e-5412-4402-9ac8-fc73803aa109">
+              <TableID>dbo_Weapons</TableID>
+              <ColumnID>Caliber</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="21601674-144c-4aeb-ae4a-1c85ad8d97ea">
+          <ID>Число Weapons</ID>
+          <Name>Число Weapons</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6e6dd0c5-b6fe-41e2-a94d-468b8da4ee64">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="925ef81c-2c77-48bd-844c-b1d24e8b3cad">
+              <TableID>dbo_Weapons</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="45d420cc-25bb-4a6f-896a-35a67a73a19d">
+          <CubeDimensionID>Weapons</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="29e10755-bf88-42fa-ac14-d698e7df0404">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="93a14966-0e99-4799-a50a-3e76fb185619">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="39aecfd3-4b1b-4dce-83fa-4d10f4cc68c1">
+                    <TableID>dbo_Weapons</TableID>
+                    <ColumnID>Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="99cc0cd7-3232-4fd5-8b7a-cd8d5aeeccc7">
+          <CubeDimensionID>Tanks</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aa7e7e41-e998-4df7-802b-8af730a972aa">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c25c33a0-4f0e-43d5-a597-a3e9d98f2112">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="10b9a5ab-8574-4b8e-933c-467498f5def4">
+                    <TableID>dbo_Weapons</TableID>
+                    <ColumnID>TankId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="17eabec2-8b16-40dc-9ccc-b50d9431dde7">
+      <ID>Tanks</ID>
+      <Name>Tanks</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ef292fea-1e67-425b-8a9b-a027e1d566ce">
+          <ID>LVL</ID>
+          <Name>LVL</Name>
+          <Source dwd:design-time-name="23e188cf-1512-4da1-8bea-bbd2e4bd390d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="633744ff-27c4-4362-a7d3-86b486a794bf">
+              <TableID>dbo_Tanks</TableID>
+              <ColumnID>LVL</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="05d66721-4825-42fd-9355-4bdad896061d">
+          <ID>Число Tanks</ID>
+          <Name>Число Tanks</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="090b3773-df1f-4763-aa11-da057ddeff55">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="82a75de9-0817-4959-89b4-4ae044375861">
+              <TableID>dbo_Tanks</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7b74da18-90c1-4d16-8964-187623cc5f74">
+          <CubeDimensionID>Tanks</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b3bcf7f0-c69a-4762-92da-0b0941367bfb">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="17058e8c-0efa-4a4c-9b10-9cd40a4169a4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5604119b-99f3-4563-a1b9-f6db57e05e94">
+                    <TableID>dbo_Tanks</TableID>
+                    <ColumnID>Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="1f2361a2-9904-48b6-ab83-db021a7e698c">
+      <ID>Users</ID>
+      <Name>Users</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="25e8b8f4-28ab-4d95-affc-aadacbe941fe">
+          <ID>Число Users</ID>
+          <Name>Число Users</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="515fa4fa-c378-4560-828e-2ff3372ba0a0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="d853a7bf-0639-4ad1-9174-804d2ab962f9">
+              <TableID>dbo_Users</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a729e9a1-7459-4ade-9b48-c2d1fdf8e3df">
+          <CubeDimensionID>Users</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ba3f22fb-a9fd-4e48-b746-35935896d15a">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5fee98e7-e737-4702-94b5-a01a9c71b031">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="73e344bc-1385-4761-8c22-384626372ef6">
+                    <TableID>dbo_Users</TableID>
+                    <ColumnID>Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="811952a2-fb52-412e-8e45-a0ad237dd54a">
+    <DataSourceViewID>WOT</DataSourceViewID>
+  </Source>
+</Cube>

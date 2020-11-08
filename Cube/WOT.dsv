@@ -1,0 +1,252 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bf5a063f-4a47-469d-be02-a0666800e82c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>WOT</ID>
+  <Name>WOT</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>WOT</DataSourceID>
+  <Schema>
+    <xs:schema id="WOT" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="WOT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1a9c8113-19ff-4b3f-89e9-d1505c1a1f80">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Costs" msprop:design-time-name="8e2c247f-77a5-485e-93aa-c3059b64a8fe" msprop:DbTableName="Costs" msprop:FriendlyName="Costs" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="7ac12b23-a8c3-4183-9ecf-fb5f760276c2" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="fdb55ae9-c1e3-4068-bc6e-0a9eea6e4f61" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Value" msprop:design-time-name="07e4d1b8-50b5-461b-aedb-01a02caf30fb" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" minOccurs="0" />
+                  <xs:element name="TankId" msprop:design-time-name="03405014-56fd-45f0-ae5a-0e59b5c943e4" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Operations" msprop:design-time-name="93f6944e-4e87-4ad8-9d0b-771010c14311" msprop:DbTableName="Operations" msprop:FriendlyName="Operations" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="90ee9e06-d701-4624-a70f-49be092f8f60" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="TYPE" msprop:design-time-name="3bbbb96e-1eae-438d-b7db-034c733041ab" msprop:DbColumnName="TYPE" msprop:FriendlyName="TYPE" type="xs:int" minOccurs="0" />
+                  <xs:element name="Value" msprop:design-time-name="ee1766b8-a5a3-4813-b04f-c762a297d261" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" minOccurs="0" />
+                  <xs:element name="UserId" msprop:design-time-name="662f8b6e-56e0-4e89-9b03-d5c8989bf62c" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Shells" msprop:design-time-name="1ac6a4bb-d877-416b-b6c4-82cab1e0a63d" msprop:DbTableName="Shells" msprop:FriendlyName="Shells" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="cda01b2d-e63f-44d7-80b3-3730be0f18ae" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Type" msprop:design-time-name="df64b887-1e4c-4bae-a00a-08ce0e9c532f" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" minOccurs="0" />
+                  <xs:element name="Penetration" msprop:design-time-name="1c5d832e-b9da-4013-8ea6-2ae49bd8ea81" msprop:DbColumnName="Penetration" msprop:FriendlyName="Penetration" type="xs:int" minOccurs="0" />
+                  <xs:element name="Speed" msprop:design-time-name="49dd7c35-2076-428d-a1bd-6c27e51c2c1b" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" minOccurs="0" />
+                  <xs:element name="Velocity" msprop:design-time-name="936a8b7c-1f21-44a9-85cc-eef671d9a8a3" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cost" msprop:design-time-name="6b127ed9-5fc7-4501-b2d3-a9668ef258b9" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" minOccurs="0" />
+                  <xs:element name="WeaponId" msprop:design-time-name="a8428046-b5b7-48c5-a879-a28414412e22" msprop:DbColumnName="WeaponId" msprop:FriendlyName="WeaponId" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_sysdiagrams" msprop:design-time-name="ccbb4d3b-78a7-492c-aee6-5e29f05e006e" msprop:DbTableName="sysdiagrams" msprop:FriendlyName="sysdiagrams" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" msprop:design-time-name="e7515431-b531-4c68-89a7-23d2d9a5b439" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="128" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="principal_id" msprop:design-time-name="294e66db-6b7b-4460-8a77-2a4341c6e648" msprop:DbColumnName="principal_id" msprop:FriendlyName="principal_id" type="xs:int" />
+                  <xs:element name="diagram_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="693c0f0d-4b56-4098-91b4-7bdc67655f6e" msprop:DbColumnName="diagram_id" msprop:FriendlyName="diagram_id" type="xs:int" />
+                  <xs:element name="version" msprop:design-time-name="060a8068-8b4b-4dd8-9584-ff14c6e25a4f" msprop:DbColumnName="version" msprop:FriendlyName="version" type="xs:int" minOccurs="0" />
+                  <xs:element name="definition" msprop:design-time-name="46bce666-bb3a-4671-bd86-8346d130edc9" msprop:DataSize="0" msprop:DbColumnName="definition" msprop:FriendlyName="definition" type="xs:base64Binary" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Tanks" msprop:design-time-name="4676916f-b1a0-4879-a70c-363984bf4487" msprop:DbTableName="Tanks" msprop:FriendlyName="Tanks" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="63d34049-2b0c-49f0-9d9d-57f1332f4244" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="ae6d7178-f92e-41ed-8a36-b4b19205c0b0" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="120" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LVL" msprop:design-time-name="9ea75e06-9f75-4b65-9e82-cf16237386ca" msprop:DbColumnName="LVL" msprop:FriendlyName="LVL" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TankStats" msprop:design-time-name="87db27ca-2e45-4725-a887-8c718f4c4de4" msprop:DbTableName="TankStats" msprop:FriendlyName="TankStats" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="4f6b28c5-6760-40c5-85b3-39ba1a533358" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="f3e52a57-f576-4fa9-8d59-57f3869e4bcb" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="AVGDamage" msprop:design-time-name="d8b39ac8-2158-4356-b156-6f7d0d301423" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" minOccurs="0" />
+                  <xs:element name="Accuracy" msprop:design-time-name="82b77528-55d8-46db-a82e-e6c33ca99869" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" minOccurs="0" />
+                  <xs:element name="Winrate" msprop:design-time-name="a4aebd65-b9ea-4d58-8734-efbe1ede7bcb" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" minOccurs="0" />
+                  <xs:element name="Matches" msprop:design-time-name="1568db11-e731-4b62-a826-44e2066dfedf" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" minOccurs="0" />
+                  <xs:element name="AVGExp" msprop:design-time-name="448ab526-f774-48c2-aba3-81e16ea06dab" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:double" minOccurs="0" />
+                  <xs:element name="TankId" msprop:design-time-name="4a9ec3c4-67a8-42d7-addd-b25a581b2989" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TTCs" msprop:design-time-name="8054d831-c3b8-432e-9206-b7069ba0e8fa" msprop:DbTableName="TTCs" msprop:FriendlyName="TTCs" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="f9c33d3a-46d7-4597-9bb8-751c57998614" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Clocking" msprop:design-time-name="58005b9a-fd33-4a69-a10f-caa5592fe8d0" msprop:DbColumnName="Clocking" msprop:FriendlyName="Clocking" type="xs:int" minOccurs="0" />
+                  <xs:element name="Speed" msprop:design-time-name="85390f42-ee29-459a-a0b8-c41bcc90c0d4" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" minOccurs="0" />
+                  <xs:element name="Velocity" msprop:design-time-name="9e118e53-aaee-4ddd-85d9-4e98e2d22d08" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" minOccurs="0" />
+                  <xs:element name="EnginePower" msprop:design-time-name="b4b86e7c-6e99-4a6a-b783-190ce3805a04" msprop:DbColumnName="EnginePower" msprop:FriendlyName="EnginePower" type="xs:int" minOccurs="0" />
+                  <xs:element name="Weight" msprop:design-time-name="5d84f564-9ea8-485a-bd75-d78dc29e58f9" msprop:DbColumnName="Weight" msprop:FriendlyName="Weight" type="xs:int" minOccurs="0" />
+                  <xs:element name="TankId" msprop:design-time-name="2051b302-e2e4-4907-a1c4-e61b7e8f2592" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Users" msprop:design-time-name="77246aab-f799-4318-92fc-fa279543169e" msprop:DbTableName="Users" msprop:FriendlyName="Users" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="18d729b0-cee0-42ad-b2b5-03d353a02bd9" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Nickname" msprop:design-time-name="38a5e0dd-e85d-4ed1-b706-3647d9c6fd34" msprop:DbColumnName="Nickname" msprop:FriendlyName="Nickname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="120" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_UserStats" msprop:design-time-name="619947b5-3a12-47e7-9d46-eed4f3489b69" msprop:DbTableName="UserStats" msprop:FriendlyName="UserStats" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="f36c30eb-e5b7-4759-81ce-13332e09636f" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="17407e3f-4d06-4c06-8ed4-3fe3a1e8cfaf" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="AVGDamage" msprop:design-time-name="876b56b4-d274-49df-a11f-643006396f7b" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" minOccurs="0" />
+                  <xs:element name="Accuracy" msprop:design-time-name="d69eb57c-d2a4-4bb2-af21-096cf23ea7d0" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" minOccurs="0" />
+                  <xs:element name="Winrate" msprop:design-time-name="80411b67-ae0c-4fc0-9c3a-74c985e5dc8a" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" minOccurs="0" />
+                  <xs:element name="Matches" msprop:design-time-name="c3afae8d-fd29-4165-b7fb-8df2542be53e" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" minOccurs="0" />
+                  <xs:element name="AVGExp" msprop:design-time-name="599c7afe-eda4-4261-a86c-91ab2cd9c5a8" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:double" minOccurs="0" />
+                  <xs:element name="UserId" msprop:design-time-name="ada3bf91-23a6-441b-8b2b-f39f3bf449ef" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Weapons" msprop:design-time-name="20c89247-f825-4d05-aa4d-49f0e65040ed" msprop:DbTableName="Weapons" msprop:FriendlyName="Weapons" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="60c6c6d8-97fa-4295-a227-10f817fa0f12" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Type" msprop:design-time-name="a8937b2c-45bd-47c6-aa11-9f29b6c2d6e6" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" minOccurs="0" />
+                  <xs:element name="Caliber" msprop:design-time-name="96da21bf-ae1d-409f-9d1f-358a010f9679" msprop:DbColumnName="Caliber" msprop:FriendlyName="Caliber" type="xs:int" minOccurs="0" />
+                  <xs:element name="TankId" msprop:design-time-name="83e04153-4d86-4757-85e0-f2eaa520dcb1" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Costs" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Operations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Operations" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Shells_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Shells" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_sysdiagrams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_sysdiagrams" />
+          <xs:field xpath="diagram_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Tanks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Tanks" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_TankStats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TankStats" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_TTCs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TTCs" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Users_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Users" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_UserStats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_UserStats" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Weapons_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Weapons" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:keyref name="FK_WeaponTank" refer="dbo_Tanks_Constraint1">
+          <xs:selector xpath=".//dbo_Weapons" />
+          <xs:field xpath="TankId" />
+        </xs:keyref>
+        <xs:keyref name="FK_StatUser" refer="dbo_Users_Constraint1">
+          <xs:selector xpath=".//dbo_UserStats" />
+          <xs:field xpath="UserId" />
+        </xs:keyref>
+        <xs:keyref name="FK_TTCTank" refer="dbo_Tanks_Constraint1">
+          <xs:selector xpath=".//dbo_TTCs" />
+          <xs:field xpath="TankId" />
+        </xs:keyref>
+        <xs:keyref name="FK_StatTank" refer="dbo_Tanks_Constraint1">
+          <xs:selector xpath=".//dbo_TankStats" />
+          <xs:field xpath="TankId" />
+        </xs:keyref>
+        <xs:keyref name="FK_ShellWeapon" refer="dbo_Weapons_Constraint1">
+          <xs:selector xpath=".//dbo_Shells" />
+          <xs:field xpath="WeaponId" />
+        </xs:keyref>
+        <xs:keyref name="FK_OperationUser" refer="dbo_Users_Constraint1">
+          <xs:selector xpath=".//dbo_Operations" />
+          <xs:field xpath="UserId" />
+        </xs:keyref>
+        <xs:keyref name="FK_CostTank" refer="dbo_Tanks_Constraint1">
+          <xs:selector xpath=".//dbo_Costs" />
+          <xs:field xpath="TankId" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <WOT xmlns="" />
+  </Schema>
+</DataSourceView>
