@@ -1,0 +1,4 @@
+Database/bin
+Database/obj
+*.refactorlog
+.vs

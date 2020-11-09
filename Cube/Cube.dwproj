@@ -44,6 +44,20 @@
       <FullPath>WOT.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Role1.role</Name>
+      <FullPath>Role1.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Role2.role</Name>
+      <FullPath>Role2.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Role3.role</Name>
+      <FullPath>Role3.role</FullPath>
+    </ProjectItem>
+  </Roles>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

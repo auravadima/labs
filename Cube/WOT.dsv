@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bf5a063f-4a47-469d-be02-a0666800e82c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="930db319-7263-45f6-b664-6c75c1044105" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>WOT</ID>
   <Name>WOT</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -26,11 +26,254 @@
         <Layouts xmlns="">
           <Diagram>
             <Name>_ALL_TABLES_</Name>
-            <DiagramLayout />
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="17" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3625" scrolltop="-1133" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32941" y="18389" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Costs" left="5420" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Costs" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Operations" left="22220" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Operations" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shells" left="20" top="1716" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Shells" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tanks" left="5420" top="5125" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Tanks" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TankStats" left="5420" top="10673" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3466" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00008a0d000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_TankStats" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TTCs" left="10820" top="4279" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_TTCs" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="16820" top="423" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Users" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserStats" left="16820" top="4702" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_UserStats" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Weapons" left="20" top="8111" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Weapons" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="2425" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_CostTank]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="6920" y="5125" />
+                    <point x="6920" y="2725" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="19520" top="963" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_OperationUser]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="19820" y="1362" />
+                    <point x="22220" y="1362" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="5411" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_ShellWeapon]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="3" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="1520" y="8111" />
+                    <point x="1520" y="5711" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="6928" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="932" height="4045" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_StatTank]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="6920" y="7427" />
+                    <point x="6920" y="9050" />
+                    <point x="7153" y="9050" />
+                    <point x="7153" y="10673" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="8120" top="5877" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_TTCTank]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="6" sourceattachpoint="13" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="8420" y="6276" />
+                    <point x="10820" y="6276" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="17921" top="1803" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_StatUser]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="8" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="18320" y="2302" />
+                    <point x="18320" y="4702" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="5877" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="3896" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_WeaponTank]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="9" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5420" y="6276" />
+                    <point x="4220" y="6276" />
+                    <point x="4220" y="9473" />
+                    <point x="3020" y="9473" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>0</DiagramViewPortLeft>
-            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramViewPortLeft>-3625</DiagramViewPortLeft>
+            <DiagramViewPortTop>-1133</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>100</DiagramZoom>
@@ -42,106 +285,98 @@
   <DataSourceID>WOT</DataSourceID>
   <Schema>
     <xs:schema id="WOT" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-      <xs:element name="WOT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1a9c8113-19ff-4b3f-89e9-d1505c1a1f80">
+      <xs:element name="WOT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4a1060aa-1e2f-4390-b826-377967bc6bbc">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="dbo_Costs" msprop:design-time-name="8e2c247f-77a5-485e-93aa-c3059b64a8fe" msprop:DbTableName="Costs" msprop:FriendlyName="Costs" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_Costs" msprop:design-time-name="8c3fa1b6-88aa-4e9b-a9bd-881549fdebe4" msprop:FriendlyName="Costs" msprop:DbSchemaName="dbo" msprop:DbTableName="Costs" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="7ac12b23-a8c3-4183-9ecf-fb5f760276c2" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Date" msprop:design-time-name="fdb55ae9-c1e3-4068-bc6e-0a9eea6e4f61" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="Value" msprop:design-time-name="07e4d1b8-50b5-461b-aedb-01a02caf30fb" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" minOccurs="0" />
-                  <xs:element name="TankId" msprop:design-time-name="03405014-56fd-45f0-ae5a-0e59b5c943e4" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id" msprop:design-time-name="27131050-5baf-4940-861e-8c02e5d3a83f" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="73ec42b2-e376-401b-8ade-907179d7a3bb" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="Value" msprop:design-time-name="2d95aa25-a309-4611-a887-adaf7b1b6a40" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" />
+                  <xs:element name="TankId" msprop:design-time-name="c4717327-ec79-496a-b1e4-0992048aabc0" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_Operations" msprop:design-time-name="93f6944e-4e87-4ad8-9d0b-771010c14311" msprop:DbTableName="Operations" msprop:FriendlyName="Operations" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_Operations" msprop:design-time-name="0a0bffee-007d-4053-847e-172eae55e1fe" msprop:FriendlyName="Operations" msprop:DbSchemaName="dbo" msprop:DbTableName="Operations" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="90ee9e06-d701-4624-a70f-49be092f8f60" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="TYPE" msprop:design-time-name="3bbbb96e-1eae-438d-b7db-034c733041ab" msprop:DbColumnName="TYPE" msprop:FriendlyName="TYPE" type="xs:int" minOccurs="0" />
-                  <xs:element name="Value" msprop:design-time-name="ee1766b8-a5a3-4813-b04f-c762a297d261" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" minOccurs="0" />
-                  <xs:element name="UserId" msprop:design-time-name="662f8b6e-56e0-4e89-9b03-d5c8989bf62c" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id" msprop:design-time-name="3bb9e522-7256-48fe-9ffd-c6e4fa2cb976" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="TYPE" msprop:design-time-name="c6609f18-ff42-4bb4-8a1b-590f2620ab3c" msprop:DbColumnName="TYPE" msprop:FriendlyName="TYPE" type="xs:int" />
+                  <xs:element name="Value" msprop:design-time-name="0e87a330-cdba-4a83-b9d5-51159682ec6d" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" />
+                  <xs:element name="UserId" msprop:design-time-name="616526ff-56a5-4c6e-86b8-cb0be0115c1d" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_Shells" msprop:design-time-name="1ac6a4bb-d877-416b-b6c4-82cab1e0a63d" msprop:DbTableName="Shells" msprop:FriendlyName="Shells" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_Shells" msprop:design-time-name="110fc733-fa66-4ae3-822d-389a9e15cf20" msprop:FriendlyName="Shells" msprop:DbSchemaName="dbo" msprop:DbTableName="Shells" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="cda01b2d-e63f-44d7-80b3-3730be0f18ae" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Type" msprop:design-time-name="df64b887-1e4c-4bae-a00a-08ce0e9c532f" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" minOccurs="0" />
-                  <xs:element name="Penetration" msprop:design-time-name="1c5d832e-b9da-4013-8ea6-2ae49bd8ea81" msprop:DbColumnName="Penetration" msprop:FriendlyName="Penetration" type="xs:int" minOccurs="0" />
-                  <xs:element name="Speed" msprop:design-time-name="49dd7c35-2076-428d-a1bd-6c27e51c2c1b" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" minOccurs="0" />
-                  <xs:element name="Velocity" msprop:design-time-name="936a8b7c-1f21-44a9-85cc-eef671d9a8a3" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" minOccurs="0" />
-                  <xs:element name="Cost" msprop:design-time-name="6b127ed9-5fc7-4501-b2d3-a9668ef258b9" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" minOccurs="0" />
-                  <xs:element name="WeaponId" msprop:design-time-name="a8428046-b5b7-48c5-a879-a28414412e22" msprop:DbColumnName="WeaponId" msprop:FriendlyName="WeaponId" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id" msprop:design-time-name="5db46ba8-544b-4ca8-b42c-7d4550ab1f8b" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Type" msprop:design-time-name="898583df-215f-43e1-898a-f7ded1c7ab22" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" />
+                  <xs:element name="Penetration" msprop:design-time-name="1b33390f-8776-4e64-907d-845b6dd6809e" msprop:DbColumnName="Penetration" msprop:FriendlyName="Penetration" type="xs:int" />
+                  <xs:element name="Speed" msprop:design-time-name="afb3d1f5-4e3f-41e4-a73d-aa2167490bd2" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" />
+                  <xs:element name="Velocity" msprop:design-time-name="47e16632-8479-4119-8f4f-ff1cf65af2bb" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" />
+                  <xs:element name="Cost" msprop:design-time-name="a52eeb4d-ba76-436f-88ad-f09927e19676" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" />
+                  <xs:element name="WeaponId" msprop:design-time-name="8b6460f1-b69a-45c2-a9ca-dd570c27dbf1" msprop:DbColumnName="WeaponId" msprop:FriendlyName="WeaponId" type="xs:int" />
+                  <xs:element name="KmTime" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="1000 / Speed" msprop:IsLogical="True" msprop:design-time-name="4b180588-b977-4be0-b8f6-8b21f38100e2" msprop:DbColumnName="KmTime" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_sysdiagrams" msprop:design-time-name="ccbb4d3b-78a7-492c-aee6-5e29f05e006e" msprop:DbTableName="sysdiagrams" msprop:FriendlyName="sysdiagrams" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_Tanks" msprop:design-time-name="bb60fe46-4e38-4c94-9bb0-7495836c6829" msprop:FriendlyName="Tanks" msprop:DbSchemaName="dbo" msprop:DbTableName="Tanks" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="name" msprop:design-time-name="e7515431-b531-4c68-89a7-23d2d9a5b439" msprop:DbColumnName="name" msprop:FriendlyName="name">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="128" />
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:element>
-                  <xs:element name="principal_id" msprop:design-time-name="294e66db-6b7b-4460-8a77-2a4341c6e648" msprop:DbColumnName="principal_id" msprop:FriendlyName="principal_id" type="xs:int" />
-                  <xs:element name="diagram_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="693c0f0d-4b56-4098-91b4-7bdc67655f6e" msprop:DbColumnName="diagram_id" msprop:FriendlyName="diagram_id" type="xs:int" />
-                  <xs:element name="version" msprop:design-time-name="060a8068-8b4b-4dd8-9584-ff14c6e25a4f" msprop:DbColumnName="version" msprop:FriendlyName="version" type="xs:int" minOccurs="0" />
-                  <xs:element name="definition" msprop:design-time-name="46bce666-bb3a-4671-bd86-8346d130edc9" msprop:DataSize="0" msprop:DbColumnName="definition" msprop:FriendlyName="definition" type="xs:base64Binary" minOccurs="0" />
-                </xs:sequence>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="dbo_Tanks" msprop:design-time-name="4676916f-b1a0-4879-a70c-363984bf4487" msprop:DbTableName="Tanks" msprop:FriendlyName="Tanks" msprop:DbSchemaName="dbo" msprop:TableType="Table">
-              <xs:complexType>
-                <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="63d34049-2b0c-49f0-9d9d-57f1332f4244" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Name" msprop:design-time-name="ae6d7178-f92e-41ed-8a36-b4b19205c0b0" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                  <xs:element name="Id" msprop:design-time-name="a2179d55-02c8-482e-ab78-36a100807fde" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="5c6c01cf-8609-4025-8876-11688a537db4" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="120" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="LVL" msprop:design-time-name="9ea75e06-9f75-4b65-9e82-cf16237386ca" msprop:DbColumnName="LVL" msprop:FriendlyName="LVL" type="xs:int" minOccurs="0" />
+                  <xs:element name="LVL" msprop:design-time-name="75d3de5f-cc9e-44ec-a580-2e5976f4e4f0" msprop:DbColumnName="LVL" msprop:FriendlyName="LVL" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_TankStats" msprop:design-time-name="87db27ca-2e45-4725-a887-8c718f4c4de4" msprop:DbTableName="TankStats" msprop:FriendlyName="TankStats" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_TankStats" msprop:design-time-name="81b41ae5-4a3f-415b-b323-ace9bc71c08e" msprop:FriendlyName="TankStats" msprop:DbSchemaName="dbo" msprop:DbTableName="TankStats" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="4f6b28c5-6760-40c5-85b3-39ba1a533358" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Date" msprop:design-time-name="f3e52a57-f576-4fa9-8d59-57f3869e4bcb" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="AVGDamage" msprop:design-time-name="d8b39ac8-2158-4356-b156-6f7d0d301423" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" minOccurs="0" />
-                  <xs:element name="Accuracy" msprop:design-time-name="82b77528-55d8-46db-a82e-e6c33ca99869" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" minOccurs="0" />
-                  <xs:element name="Winrate" msprop:design-time-name="a4aebd65-b9ea-4d58-8734-efbe1ede7bcb" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" minOccurs="0" />
-                  <xs:element name="Matches" msprop:design-time-name="1568db11-e731-4b62-a826-44e2066dfedf" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" minOccurs="0" />
-                  <xs:element name="AVGExp" msprop:design-time-name="448ab526-f774-48c2-aba3-81e16ea06dab" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:double" minOccurs="0" />
-                  <xs:element name="TankId" msprop:design-time-name="4a9ec3c4-67a8-42d7-addd-b25a581b2989" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id" msprop:design-time-name="446cc8fc-9ad1-4b9f-8da4-ffb836a226aa" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="5cfaef3b-57d2-4f1a-9e36-5af0317f20a5" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="AVGDamage" msprop:design-time-name="f1e133e9-ff07-4d88-adb3-8c6501c2a587" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" />
+                  <xs:element name="Accuracy" msprop:design-time-name="0cbacc29-9837-4c72-a420-162e6fc1f1c8" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" />
+                  <xs:element name="Winrate" msprop:design-time-name="90154053-d394-4e52-bf45-f2b1b3c4acd4" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" />
+                  <xs:element name="Matches" msprop:design-time-name="c4bd6484-1ede-4b2e-8994-ed0e7ca46453" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" />
+                  <xs:element name="AVGExp" msprop:design-time-name="83e7afbd-b693-49bf-b054-a29aa6824771" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:int" />
+                  <xs:element name="TankId" msprop:design-time-name="ee2022ab-65fb-4d94-a9ab-c439ee8fefd6" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
+                  <xs:element name="Shots" msprop:design-time-name="4097b671-bbc2-4937-8524-7b3a13a756d7" msprop:DbColumnName="Shots" msprop:FriendlyName="Shots" type="xs:int" />
+                  <xs:element name="Penetrations" msprop:design-time-name="3053f6ed-99a4-4681-9a25-398f2ad9bf3f" msprop:DbColumnName="Penetrations" msprop:FriendlyName="Penetrations" type="xs:int" />
+                  <xs:element name="Hits" msprop:design-time-name="6c1824e7-b3cc-475a-a219-5886f8483751" msprop:DbColumnName="Hits" msprop:FriendlyName="Hits" type="xs:int" />
+                  <xs:element name="AVGLightDamage" msprop:design-time-name="55bf6fd1-7e31-4756-b418-1bff66c75126" msprop:DbColumnName="AVGLightDamage" msprop:FriendlyName="AVGLightDamage" type="xs:int" />
+                  <xs:element name="AVGBlock" msprop:design-time-name="b36b0eca-2954-4c5d-94fc-bb233c9dbf00" msprop:DbColumnName="AVGBlock" msprop:FriendlyName="AVGBlock" type="xs:int" />
+                  <xs:element name="TotalExp" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="AVGExp * Matches" msprop:IsLogical="True" msprop:design-time-name="9d58b576-2238-413b-9e8b-a300074b1bb5" msprop:DbColumnName="TotalExp" type="xs:int" minOccurs="0" />
+                  <xs:element name="WinCount" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="Matches * Winrate" msprop:IsLogical="True" msprop:design-time-name="e8e73964-d9ed-4557-a6c2-0216e901ac56" msprop:DbColumnName="WinCount" type="xs:double" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_TTCs" msprop:design-time-name="8054d831-c3b8-432e-9206-b7069ba0e8fa" msprop:DbTableName="TTCs" msprop:FriendlyName="TTCs" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_TTCs" msprop:design-time-name="bc6dbc73-814f-4242-b0e0-236ead5e03d1" msprop:FriendlyName="TTCs" msprop:DbSchemaName="dbo" msprop:DbTableName="TTCs" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="f9c33d3a-46d7-4597-9bb8-751c57998614" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Clocking" msprop:design-time-name="58005b9a-fd33-4a69-a10f-caa5592fe8d0" msprop:DbColumnName="Clocking" msprop:FriendlyName="Clocking" type="xs:int" minOccurs="0" />
-                  <xs:element name="Speed" msprop:design-time-name="85390f42-ee29-459a-a0b8-c41bcc90c0d4" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" minOccurs="0" />
-                  <xs:element name="Velocity" msprop:design-time-name="9e118e53-aaee-4ddd-85d9-4e98e2d22d08" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" minOccurs="0" />
-                  <xs:element name="EnginePower" msprop:design-time-name="b4b86e7c-6e99-4a6a-b783-190ce3805a04" msprop:DbColumnName="EnginePower" msprop:FriendlyName="EnginePower" type="xs:int" minOccurs="0" />
-                  <xs:element name="Weight" msprop:design-time-name="5d84f564-9ea8-485a-bd75-d78dc29e58f9" msprop:DbColumnName="Weight" msprop:FriendlyName="Weight" type="xs:int" minOccurs="0" />
-                  <xs:element name="TankId" msprop:design-time-name="2051b302-e2e4-4907-a1c4-e61b7e8f2592" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id" msprop:design-time-name="0b87a48e-0bb2-4593-8fd0-c3b7b396712c" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Clocking" msprop:design-time-name="243d68ab-e78a-485b-b536-a3e3a70ab248" msprop:DbColumnName="Clocking" msprop:FriendlyName="Clocking" type="xs:int" />
+                  <xs:element name="Speed" msprop:design-time-name="eedc6b8f-3cbb-4f83-9272-33e1e15452e8" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" />
+                  <xs:element name="Velocity" msprop:design-time-name="b92e287d-d630-4813-8f24-02c93496589a" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" />
+                  <xs:element name="EnginePower" msprop:design-time-name="3aa197d0-8173-4a29-9437-08026ad91859" msprop:DbColumnName="EnginePower" msprop:FriendlyName="EnginePower" type="xs:int" />
+                  <xs:element name="Weight" msprop:design-time-name="1aa67c34-801e-41c2-9120-5fceddf3b79a" msprop:DbColumnName="Weight" msprop:FriendlyName="Weight" type="xs:int" />
+                  <xs:element name="TankId" msprop:design-time-name="aa4414f2-d1b0-42b6-a968-371f4d0b00ba" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
+                  <xs:element name="SpecificEnginePower" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="EnginePower / Weight" msprop:IsLogical="True" msprop:design-time-name="f27475e6-99f7-4da4-b4e2-cdff4308f729" msprop:DbColumnName="SpecificEnginePower" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_Users" msprop:design-time-name="77246aab-f799-4318-92fc-fa279543169e" msprop:DbTableName="Users" msprop:FriendlyName="Users" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_Users" msprop:design-time-name="fa221854-5b27-4154-babb-d957b9eea2b9" msprop:FriendlyName="Users" msprop:DbSchemaName="dbo" msprop:DbTableName="Users" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="18d729b0-cee0-42ad-b2b5-03d353a02bd9" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Nickname" msprop:design-time-name="38a5e0dd-e85d-4ed1-b706-3647d9c6fd34" msprop:DbColumnName="Nickname" msprop:FriendlyName="Nickname" minOccurs="0">
+                  <xs:element name="Id" msprop:design-time-name="45981975-0951-4bfa-9d05-51343f8dcc53" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Nickname" msprop:design-time-name="bafb015e-4ab5-4ea7-93e6-94f82ea306ff" msprop:DbColumnName="Nickname" msprop:FriendlyName="Nickname">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="120" />
@@ -151,27 +386,29 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_UserStats" msprop:design-time-name="619947b5-3a12-47e7-9d46-eed4f3489b69" msprop:DbTableName="UserStats" msprop:FriendlyName="UserStats" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_UserStats" msprop:design-time-name="0e6f4fb9-e9bf-4759-810f-f4a857507400" msprop:FriendlyName="UserStats" msprop:DbSchemaName="dbo" msprop:DbTableName="UserStats" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="f36c30eb-e5b7-4759-81ce-13332e09636f" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Date" msprop:design-time-name="17407e3f-4d06-4c06-8ed4-3fe3a1e8cfaf" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="AVGDamage" msprop:design-time-name="876b56b4-d274-49df-a11f-643006396f7b" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" minOccurs="0" />
-                  <xs:element name="Accuracy" msprop:design-time-name="d69eb57c-d2a4-4bb2-af21-096cf23ea7d0" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" minOccurs="0" />
-                  <xs:element name="Winrate" msprop:design-time-name="80411b67-ae0c-4fc0-9c3a-74c985e5dc8a" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" minOccurs="0" />
-                  <xs:element name="Matches" msprop:design-time-name="c3afae8d-fd29-4165-b7fb-8df2542be53e" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" minOccurs="0" />
-                  <xs:element name="AVGExp" msprop:design-time-name="599c7afe-eda4-4261-a86c-91ab2cd9c5a8" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:double" minOccurs="0" />
-                  <xs:element name="UserId" msprop:design-time-name="ada3bf91-23a6-441b-8b2b-f39f3bf449ef" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id" msprop:design-time-name="8a01d34a-45d0-45a8-b554-7896ae961633" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="dfe20922-23ca-4314-bcb8-a87e731d6b4e" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                  <xs:element name="AVGDamage" msprop:design-time-name="236ba635-ea59-41c1-9731-db8f213d14ed" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" />
+                  <xs:element name="Accuracy" msprop:design-time-name="ac844b8e-3623-44ad-a650-534f6efd652b" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" />
+                  <xs:element name="Winrate" msprop:design-time-name="9ed7fb93-1bb0-46b9-8fb8-5416683c6932" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" />
+                  <xs:element name="Matches" msprop:design-time-name="637859ab-ebf2-47f9-b505-52d968b683e2" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" />
+                  <xs:element name="AVGExp" msprop:design-time-name="d5ac653a-671f-4617-9884-dd655f53ee5b" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:double" />
+                  <xs:element name="UserId" msprop:design-time-name="77de0eb2-d6e2-4c79-b3b0-7b0366c8cc40" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" />
+                  <xs:element name="TotalDamage" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="AVGDamage * Matches" msprop:IsLogical="True" msprop:design-time-name="ffba936a-9412-4bbe-932f-636a37be8d12" msprop:DbColumnName="TotalDamage" type="xs:int" minOccurs="0" />
+                  <xs:element name="WinCount" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="Matches * Winrate" msprop:IsLogical="True" msprop:design-time-name="87529a87-8542-44c1-adcc-afcd2549795d" msprop:DbColumnName="WinCount" type="xs:double" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_Weapons" msprop:design-time-name="20c89247-f825-4d05-aa4d-49f0e65040ed" msprop:DbTableName="Weapons" msprop:FriendlyName="Weapons" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_Weapons" msprop:design-time-name="cae8e6c0-88ab-48d9-9965-b1069e25e2d7" msprop:FriendlyName="Weapons" msprop:DbSchemaName="dbo" msprop:DbTableName="Weapons" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="Id" msprop:design-time-name="60c6c6d8-97fa-4295-a227-10f817fa0f12" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                  <xs:element name="Type" msprop:design-time-name="a8937b2c-45bd-47c6-aa11-9f29b6c2d6e6" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" minOccurs="0" />
-                  <xs:element name="Caliber" msprop:design-time-name="96da21bf-ae1d-409f-9d1f-358a010f9679" msprop:DbColumnName="Caliber" msprop:FriendlyName="Caliber" type="xs:int" minOccurs="0" />
-                  <xs:element name="TankId" msprop:design-time-name="83e04153-4d86-4757-85e0-f2eaa520dcb1" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id" msprop:design-time-name="44e7de2f-a9d6-425d-bd78-09e33d276ab0" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Type" msprop:design-time-name="08f2851f-ba24-4221-ac68-4b1e91aa213a" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" />
+                  <xs:element name="Caliber" msprop:design-time-name="49e0c56b-8dc3-468f-b267-ab83dbaa7dbb" msprop:DbColumnName="Caliber" msprop:FriendlyName="Caliber" type="xs:int" />
+                  <xs:element name="TankId" msprop:design-time-name="935a18d3-af1e-411b-a0d1-8a10765e8bf3" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -188,10 +425,6 @@
         <xs:unique name="dbo_Shells_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
           <xs:selector xpath=".//dbo_Shells" />
           <xs:field xpath="Id" />
-        </xs:unique>
-        <xs:unique name="dbo_sysdiagrams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-          <xs:selector xpath=".//dbo_sysdiagrams" />
-          <xs:field xpath="diagram_id" />
         </xs:unique>
         <xs:unique name="dbo_Tanks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
           <xs:selector xpath=".//dbo_Tanks" />

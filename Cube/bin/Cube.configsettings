@@ -82,22 +82,6 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
-          <MeasureGroup>
-            <ID>Tanks</ID>
-            <Partitions>
-              <Partition>
-                <ID>Tanks</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
-            <ID>Users</ID>
-            <Partitions>
-              <Partition>
-                <ID>Users</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
         </MeasureGroups>
       </Cube>
     </Cubes>

@@ -1,6 +1,0 @@
-C:\Users\aurav\Desktop\Labs\Database\bin\Debug\Database.dacpac
-C:\Users\aurav\Desktop\Labs\Database\bin\Debug\Database.dll
-C:\Users\aurav\Desktop\Labs\Database\bin\Debug\Database.pdb
-C:\Users\aurav\Desktop\Labs\Database\obj\Debug\Database.dll
-C:\Users\aurav\Desktop\Labs\Database\obj\Debug\Database.pdb
-C:\Users\aurav\Desktop\Labs\Database\obj\Debug\Database.sqlprojAssemblyReference.cache
