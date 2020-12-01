@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <ProcessingOption>Default</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,57 +19,92 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>PpgAxSktAhBKjlCxpt8u7YxXhXo=09.11.2020 12:24:4509.11.2020 12:24:45</TimeStamp>
+        <TimeStamp>5J3mo6VH6W3o7XrwOV+/2WOV+E8=01.12.2020 19:39:5301.12.2020 19:39:53</TimeStamp>
         <ID>
           <String>WOT</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>XIMEJcrCDVGyCq96Ddd0VzWqr4E=09.11.2020 12:51:0009.11.2020 12:24:52</TimeStamp>
+        <TimeStamp>QQpa8zCDFJXVLSckJ7hvuvEhhYk=01.12.2020 20:08:0101.12.2020 19:40:07</TimeStamp>
         <ID>
           <String>WOT</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>pIMQGjcm7lUUka68iuH4V4BBEXg=09.11.2020 12:45:4809.11.2020 12:45:20</TimeStamp>
+        <TimeStamp>HsTo4jHj1RLs5EoIy2dBFlFM10Q=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
         <ID>
-          <String>Tanks</String>
+          <String>Items</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>6mHjYr1Vsy58Ba/gtcKDt47v2+s=09.11.2020 12:45:4809.11.2020 12:45:20</TimeStamp>
+        <TimeStamp>zgepzdy+QYveeQEZBQkyB4RQjUg=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <ID>
+          <String>Maps</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mQqDcC6QDAibmvLI274qsKPC5VI=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
         <ID>
           <String>Users</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Ulr7J5hA8O87oPDQEERVxGOYNkQ=09.11.2020 12:45:4809.11.2020 12:45:20</TimeStamp>
+        <TimeStamp>jFmLIAS88E3qZV4UD1M/WD4tblk=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <ID>
+          <String>Shells</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Y12dVabKX+W+wkOS2FclN6AQ0/Q=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <ID>
+          <String>Tanks</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4CgNpyJqzddj01qYSNLWwsJvV/U=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
         <ID>
           <String>Weapons</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>sQzIvc6OVPfWMbBwA2SijiSqo0g=09.11.2020 12:51:0009.11.2020 12:45:20POtm4xZnrtSHT2SnZzi+gzK9Ihg=09.11.2020 12:45:2009.11.2020 12:45:20</TimeStamp>
+        <TimeStamp>YNW/Eq7HYhskOI1rQQW37kBI3Q8=01.12.2020 20:30:4201.12.2020 20:21:55epdlb4RwUPCpTP33kb7jDV6YsP8=01.12.2020 20:21:5601.12.2020 20:21:55</TimeStamp>
         <ID>
           <String>WOT</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Role</Type>
-        <TimeStamp>7JZXntDl1trCuOMRCl6zA7So8I0=09.11.2020 10:21:3309.11.2020 10:21:33</TimeStamp>
+        <TimeStamp>FV+rDMAtBg19l42LFgBjOZRUmQc=09.11.2020 13:08:0409.11.2020 10:21:33</TimeStamp>
         <ID>
           <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>8n1akyAceLlf2zrTerOsZEuM6tE=09.11.2020 13:08:0409.11.2020 12:57:10</TimeStamp>
+        <ID>
+          <String>Role 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>85jaoSMz+MT7CWPF5idtz3FUeuI=09.11.2020 13:08:0409.11.2020 12:57:40</TimeStamp>
+        <ID>
+          <String>Role 2</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>bpHv7VAONqlMWOKGcVkk8nh882g=09.11.2020 10:29:4422.10.2020 12:49:32</TimeStamp>
+      <TimeStamp>w6ofir495jjsRVieTXLrayeJ+8Y=09.11.2020 13:08:0422.10.2020 12:49:32</TimeStamp>
       <ID>
         <String>Cube</String>
       </ID>
@@ -78,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2020-11-09T05:51:02.61Z</LastDeployed>
+  <LastDeployed>2020-12-01T13:30:43.71Z</LastDeployed>
 </DeploymentSnapshot>

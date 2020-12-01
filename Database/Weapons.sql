@@ -2,8 +2,8 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY,
 	[Type] INT NOT NULL,
-	[Caliber] INT NOT NULL,
-	[TankId] INT NOT NULL, 
-    CONSTRAINT [FK_WeaponTank] FOREIGN KEY ([TankId]) REFERENCES [Tanks]([Id]),
+	[Caliber] INT NOT NULL, 
+	[TankId] INT NOt NULL,
+    CONSTRAINT [FK_Tank] FOREIGN KEY ([TankId]) REFERENCES [Tanks]([Id]),
 
 )

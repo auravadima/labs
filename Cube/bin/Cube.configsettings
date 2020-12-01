@@ -13,10 +13,19 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Tanks</ID>
+        <ID>Items</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Maps</ID>
       </Dimension>
       <Dimension>
         <ID>Users</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Shells</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Tanks</ID>
       </Dimension>
       <Dimension>
         <ID>Weapons</ID>
@@ -27,10 +36,18 @@
         <ID>WOT</ID>
         <MeasureGroups>
           <MeasureGroup>
-            <ID>Costs</ID>
+            <ID>Items Info</ID>
             <Partitions>
               <Partition>
-                <ID>Costs</ID>
+                <ID>Items Info</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Map Info</ID>
+            <Partitions>
+              <Partition>
+                <ID>Map Info</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
@@ -43,10 +60,10 @@
             </Partitions>
           </MeasureGroup>
           <MeasureGroup>
-            <ID>Shells</ID>
+            <ID>Shell Stats</ID>
             <Partitions>
               <Partition>
-                <ID>Shells</ID>
+                <ID>Shell Stats</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
@@ -75,10 +92,10 @@
             </Partitions>
           </MeasureGroup>
           <MeasureGroup>
-            <ID>Weapons</ID>
+            <ID>Weapon Stats</ID>
             <Partitions>
               <Partition>
-                <ID>Weapons</ID>
+                <ID>Weapon Stats</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

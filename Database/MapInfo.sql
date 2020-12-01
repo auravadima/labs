@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[MapInfo]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[Area] INT NOT NULL,
+	[Season] NVARCHAR(30) NOT NULL, 
+	[MapId] INT NOT NULL,
+    CONSTRAINT [FK_Map] FOREIGN KEY ([MapId]) REFERENCES [Maps]([Id])
+)

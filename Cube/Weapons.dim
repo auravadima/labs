@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e7af1e6a-338c-4fcf-8820-1a783a7a490b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="48330b48-7065-4122-a899-3ba57dfe17dd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Weapons</ID>
-  <Name>Weapons</Name>
+  <Name>Орудия</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-7171" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="17066" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6139" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-7171</Value>
+      <Value>-6139</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,71 +68,51 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0c4e4a25-9212-4ff8-9d61-4a95f058e6e7">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="06ef49ad-1390-45ba-986b-ee5e6a8f4606">
     <DataSourceViewID>WOT</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="2d86d221-04fb-43ae-8006-46cb4414dd4a">
+  <ErrorConfiguration dwd:design-time-name="7217f89a-3fbb-4081-aaa4-45c74ac288a3">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="72967597-75ed-4465-98a5-8427d06baa2f">
+    <Attribute dwd:design-time-name="2799513c-a077-4aa7-8dd7-3140593114d2">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="59375e26-7080-4f22-97c9-8629e680d795">
+        <KeyColumn dwd:design-time-name="de3f0d38-5d43-4de0-81be-f06c97ae349a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7f1c9a5-d98e-409a-bde6-6c332fee8e2d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a9a7b6c-9f0c-4cac-8cb2-53369d721ada">
             <TableID>dbo_Weapons</TableID>
             <ColumnID>Id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a3773914-1112-43d4-b77a-55ca24c9dea5">
-          <AttributeID>Tank Id</AttributeID>
-          <Name>Tank Id</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="169d0138-073e-4fc0-b669-399a80c98755">
+        <AttributeRelationship dwd:design-time-name="0f36eda9-b0bf-4894-bcc6-46f570598d3d">
           <AttributeID>Type</AttributeID>
-          <Name>Type</Name>
+          <Name>Тип</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9723f683-ef20-47b1-8a00-78f9dfb26309">
+        <AttributeRelationship dwd:design-time-name="789554e0-b94d-4a29-acdb-82397839bca9">
           <AttributeID>Caliber</AttributeID>
-          <Name>Caliber</Name>
+          <Name>Калибр</Name>
         </AttributeRelationship>
       </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="e902f421-ec3b-49fc-92a1-622eacb1f887">
-      <ID>Tank Id</ID>
-      <Name>Tank Id</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="b4448759-a87f-45ed-80bf-bba6a78b9fb9">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="94abb23a-5957-432d-878c-3dbceec3d28e">
-            <TableID>dbo_Weapons</TableID>
-            <ColumnID>TankId</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="344afb26-a689-4809-be4b-a77fce71ad60">
+    <Attribute dwd:design-time-name="964bac70-960b-46e2-a415-22f9159a5164">
       <ID>Type</ID>
-      <Name>Type</Name>
+      <Name>Тип</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8a941356-a9bc-47ad-a17a-5c3e0827a700">
+        <KeyColumn dwd:design-time-name="d2a8c22a-3078-492a-b75c-fd0fd9a035cb">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f71ed9d6-fd50-4836-987f-f590d062caa9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63baf9c4-c77d-42e0-9833-cfe336f08283">
             <TableID>dbo_Weapons</TableID>
             <ColumnID>Type</ColumnID>
           </Source>
@@ -141,13 +121,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="25276285-e474-4c3a-ac02-d06efc083e44">
+    <Attribute dwd:design-time-name="ca2facba-b939-422a-9466-9f49e77d7d25">
       <ID>Caliber</ID>
-      <Name>Caliber</Name>
+      <Name>Калибр</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4633ecc2-f74e-4999-bedd-408093304a14">
+        <KeyColumn dwd:design-time-name="4ba40049-3642-497f-8561-b16435df8746">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9fc64ec2-61e0-429e-a08a-7516077e3991">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58f287bf-795f-444c-8fc8-9e6d89f91f7d">
             <TableID>dbo_Weapons</TableID>
             <ColumnID>Caliber</ColumnID>
           </Source>

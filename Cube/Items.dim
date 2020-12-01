@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5a9fa19a-724c-4eb0-93e8-16600bfc687f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>Users</ID>
-  <Name>Пользователи</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="20bdbee3-15da-4b53-8bd9-b92d94660db6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Items</ID>
+  <Name>Предметы</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -19,13 +19,13 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Items" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_Users" vartype="8" />
+                <property name="LogicalObject" value="dbo_Items" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -68,33 +68,33 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b6794eb8-a711-4311-86de-76abac7de04d">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c8ce9346-aa7c-4259-94b6-477061a007a5">
     <DataSourceViewID>WOT</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="1dd6f872-ec4f-4f5e-bbf3-0e6ae78325cd">
+  <ErrorConfiguration dwd:design-time-name="d1390e5b-a6ec-4c11-ad77-b9b742bc4f93">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="b3494a7b-0118-4b60-be58-bff663a64c96">
+    <Attribute dwd:design-time-name="928a2443-0c84-435e-8a62-619a04ca30d3">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0279516b-3d81-4c85-badf-b49e1c1e5dc8">
+        <KeyColumn dwd:design-time-name="5ac5f791-ad17-40f6-8800-2c1ab12e6358">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="572ff493-19d6-4604-b1f4-c708923f2863">
-            <TableID>dbo_Users</TableID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ccf1c0d9-053f-4611-ba92-628ff35c3cf0">
+            <TableID>dbo_Items</TableID>
             <ColumnID>Id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="014d7379-96e8-496c-a002-da2ab632e62a">
-          <AttributeID>Nickname</AttributeID>
-          <Name>Логин</Name>
+        <AttributeRelationship dwd:design-time-name="18adbe18-c3b7-492a-a2b2-e8a6fdf91d05">
+          <AttributeID>Name</AttributeID>
+          <Name>Name_</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -102,16 +102,16 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2538dd15-3a12-4b07-90bb-1f19b0d7b2a5">
-      <ID>Nickname</ID>
-      <Name>Логин</Name>
+    <Attribute dwd:design-time-name="48c00cec-2f78-4298-8af9-8b65c32aa4e0">
+      <ID>Name</ID>
+      <Name>Название</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a9c7a2ba-e1fe-4062-b436-babda745d69c">
+        <KeyColumn dwd:design-time-name="79875cd3-9b71-4398-aebf-4581945449c9">
           <DataType>WChar</DataType>
-          <DataSize>120</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c07780b-fb75-4ae2-858f-a99fbe0b8cc1">
-            <TableID>dbo_Users</TableID>
-            <ColumnID>Nickname</ColumnID>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84f91252-2f8b-436a-a105-8a82cdb22232">
+            <TableID>dbo_Items</TableID>
+            <ColumnID>Name</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

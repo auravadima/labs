@@ -94,8 +94,8 @@
   </DataSourceImpersonationInfo>
   <Dimensions>
     <Dimension>
-      <ID>Tanks</ID>
-      <Name>Tanks</Name>
+      <ID>Items</ID>
+      <Name>Предметы</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
@@ -103,7 +103,518 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-7382" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="17066" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6562" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Items" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Items" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-4102</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6562</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>WOT</DataSourceViewID>
+      </Source>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Items</TableID>
+                <ColumnID>Id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Name</AttributeID>
+              <Name>Name_</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Name</ID>
+          <Name>Название</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Items</TableID>
+                <ColumnID>Name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Maps</ID>
+      <Name>Карты</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6562" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Maps" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Maps" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-4102</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6562</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>WOT</DataSourceViewID>
+      </Source>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Maps</TableID>
+                <ColumnID>Id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Name</AttributeID>
+              <Name>Name_</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Name</ID>
+          <Name>Название</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>120</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Maps</TableID>
+                <ColumnID>Name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Users</ID>
+      <Name>Пользователи</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6562" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Users" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-4102</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6562</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>WOT</DataSourceViewID>
+      </Source>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Users</TableID>
+                <ColumnID>Id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Nickname</AttributeID>
+              <Name>Логин</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Nickname</ID>
+          <Name>Логин</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>120</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Users</TableID>
+                <ColumnID>Nickname</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Shells</ID>
+      <Name>Снаряды</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6350" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shells" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Shells" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-4102</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6350</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>WOT</DataSourceViewID>
+      </Source>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Shells</TableID>
+                <ColumnID>Id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Type</AttributeID>
+              <Name>Тип</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Name</AttributeID>
+              <Name>Name_</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Type</ID>
+          <Name>Тип</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Shells</TableID>
+                <ColumnID>Type</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Name</ID>
+          <Name>Название</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>120</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Shells</TableID>
+                <ColumnID>Name</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Tanks</ID>
+      <Name>Танки</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6350" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
                 </font>
@@ -146,7 +657,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-7382</Value>
+          <Value>-6350</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -193,16 +704,17 @@
             </AttributeRelationship>
             <AttributeRelationship>
               <AttributeID>LVL</AttributeID>
-              <Name>LVL</Name>
+              <Name>Уровень</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
           <ID>Name</ID>
-          <Name>Name</Name>
+          <Name>Название</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
@@ -218,7 +730,7 @@
         </Attribute>
         <Attribute>
           <ID>LVL</ID>
-          <Name>LVL</Name>
+          <Name>Уровень</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -235,130 +747,8 @@
       <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
     </Dimension>
     <Dimension>
-      <ID>Users</ID>
-      <Name>Users</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <Annotations>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
-          <Value>
-            <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-7594" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="17066" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
-                <font>
-                  <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
-                </font>
-                <mouseicon>
-                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
-                </mouseicon>
-              </diagram>
-              <layoutmanager>
-                <ddsxmlobj />
-              </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Users" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-            </dds>
-          </Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
-          <Value>false</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-4102</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-7594</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>100</Value>
-        </Annotation>
-      </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>WOT</DataSourceViewID>
-      </Source>
-      <ErrorConfiguration>
-        <KeyNotFound>ReportAndStop</KeyNotFound>
-        <KeyDuplicate>ReportAndStop</KeyDuplicate>
-        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
-      </ErrorConfiguration>
-      <CurrentStorageMode>Molap</CurrentStorageMode>
-      <Attributes>
-        <Attribute>
-          <ID>Id</ID>
-          <Name>Id</Name>
-          <Usage>Key</Usage>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_Users</TableID>
-                <ColumnID>Id</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Nickname</AttributeID>
-              <Name>Nickname</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
-          <OrderBy>Key</OrderBy>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Nickname</ID>
-          <Name>Nickname</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>WChar</DataType>
-              <DataSize>120</DataSize>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_Users</TableID>
-                <ColumnID>Nickname</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-      </Attributes>
-      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
-    </Dimension>
-    <Dimension>
       <ID>Weapons</ID>
-      <Name>Weapons</Name>
+      <Name>Орудия</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <Annotations>
@@ -366,7 +756,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-7171" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="17066" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6139" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
                 </font>
@@ -409,7 +799,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-7171</Value>
+          <Value>-6139</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -451,34 +841,14 @@
           </KeyColumns>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Tank Id</AttributeID>
-              <Name>Tank Id</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
               <AttributeID>Type</AttributeID>
-              <Name>Type</Name>
+              <Name>Тип</Name>
             </AttributeRelationship>
             <AttributeRelationship>
               <AttributeID>Caliber</AttributeID>
-              <Name>Caliber</Name>
+              <Name>Калибр</Name>
             </AttributeRelationship>
           </AttributeRelationships>
-          <OrderBy>Key</OrderBy>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Tank Id</ID>
-          <Name>Tank Id</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_Weapons</TableID>
-                <ColumnID>TankId</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
           <OrderBy>Key</OrderBy>
           <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -486,7 +856,7 @@
         </Attribute>
         <Attribute>
           <ID>Type</ID>
-          <Name>Type</Name>
+          <Name>Тип</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -501,7 +871,7 @@
         </Attribute>
         <Attribute>
           <ID>Caliber</ID>
-          <Name>Caliber</Name>
+          <Name>Калибр</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
@@ -529,7 +899,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="17" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3360" scrolltop="-154" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32411" y="17066" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1291" scrolltop="-5000" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="32411" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
                 </font>
@@ -540,75 +910,20 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shells" left="20" top="4202" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Shells" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TankStats" left="5420" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3466" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e00008a0d000088130000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_TankStats" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Costs" left="10820" top="7400" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="MapInfo" left="37012" top="4279" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Costs" vartype="8" />
+                    <property name="LogicalObject" value="dbo_MapInfo" vartype="8" />
                   </ddsxmlobj>
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="16820" top="423" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserStats" left="5420" top="1" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4577" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Users" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Operations" left="22220" top="0" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Operations" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tanks" left="5420" top="7611" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_Tanks" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserStats" left="16820" top="4702" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000e1110000ea120000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -617,7 +932,7 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Weapons" left="20" top="10597" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Weapons" left="25612" top="5125" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
                 </control>
@@ -628,7 +943,73 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TTCs" left="5420" top="12313" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shells" left="19071" top="6819" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Shells" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="WeaponStats" left="25612" top="0" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_WeaponStats" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ItemsInfo" left="12997" top="4279" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_ItemsInfo" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Operations" left="20" top="5761" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Operations" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TankStats" left="25146" top="14952" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3466" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00008a0d000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_TankStats" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Maps" left="37012" top="0" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Maps" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TTCs" left="31012" top="9404" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
                 </control>
@@ -639,7 +1020,51 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="7897" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ShellStats" left="18997" top="0" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3149" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00004d0c000043110000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_ShellStats" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Items" left="12997" top="0" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Items" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tanks" left="25612" top="10250" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Tanks" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="20" top="1482" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Users" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="38113" top="1380" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -647,73 +1072,17 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK_ShellWeapon]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK_Map]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="1520" y="10597" />
-                  <point x="1520" y="8197" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="1" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="38512" y="1879" />
+                  <point x="38512" y="4279" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="4700" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="932" height="3411" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                  </ddsxmlobj>
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK_StatTank]" vartype="8" />
-                    <property name="Virtual" value="0" vartype="11" />
-                    <property name="VisibleAP" value="0" vartype="3" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="6920" y="7611" />
-                  <point x="6920" y="6306" />
-                  <point x="7153" y="6306" />
-                  <point x="7153" y="5000" />
-                </connector>
-              </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="8120" top="8363" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                  </ddsxmlobj>
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK_CostTank]" vartype="8" />
-                    <property name="Virtual" value="0" vartype="11" />
-                    <property name="VisibleAP" value="0" vartype="3" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="8420" y="8762" />
-                  <point x="10820" y="8762" />
-                </connector>
-              </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="19520" top="963" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                  </ddsxmlobj>
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK_OperationUser]" vartype="8" />
-                    <property name="Virtual" value="0" vartype="11" />
-                    <property name="VisibleAP" value="0" vartype="3" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="19820" y="1362" />
-                  <point x="22220" y="1362" />
-                </connector>
-              </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="17921" top="1803" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="2022" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -726,12 +1095,124 @@
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="18320" y="2302" />
-                  <point x="18320" y="4702" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="2" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="3020" y="2421" />
+                  <point x="4220" y="2421" />
+                  <point x="4220" y="2422" />
+                  <point x="5420" y="2422" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="9414" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="26713" top="7550" logicalid="17" controlid="17" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_Tank]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="3" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="27112" y="10250" />
+                  <point x="27112" y="7850" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="26713" top="2425" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_Weapon]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="27112" y="5125" />
+                  <point x="27112" y="2725" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="20172" top="4119" logicalid="19" controlid="19" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_Shell]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="11" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="20571" y="6819" />
+                  <point x="20571" y="4419" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="14098" top="1380" logicalid="20" controlid="20" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_Item]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="12" destid="6" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="14497" y="1879" />
+                  <point x="14497" y="4279" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="2862" logicalid="21" controlid="21" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_OperationUser]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="7" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="1520" y="3361" />
+                  <point x="1520" y="5761" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="26579" top="12053" logicalid="22" controlid="22" masterid="0" hint1="0" hint2="0" width="933" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobj>
+                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                  </ddsxmlobj>
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dataSet.Relations[FK_StatTank]" vartype="8" />
+                    <property name="Virtual" value="0" vartype="11" />
+                    <property name="VisibleAP" value="0" vartype="3" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="8" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="27112" y="12552" />
+                  <point x="27112" y="13752" />
+                  <point x="26879" y="13752" />
+                  <point x="26879" y="14952" />
+                </connector>
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="28312" top="11002" logicalid="23" controlid="23" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -744,29 +1225,9 @@
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="9" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="6920" y="9913" />
-                  <point x="6920" y="12313" />
-                </connector>
-              </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="8363" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="3896" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                  </ddsxmlobj>
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK_WeaponTank]" vartype="8" />
-                    <property name="Virtual" value="0" vartype="11" />
-                    <property name="VisibleAP" value="0" vartype="3" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="8" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="5420" y="8762" />
-                  <point x="4220" y="8762" />
-                  <point x="4220" y="11959" />
-                  <point x="3020" y="11959" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="10" sourceattachpoint="13" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="28612" y="11401" />
+                  <point x="31012" y="11401" />
                 </connector>
               </ddscontrol>
             </dds>
@@ -786,11 +1247,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-3360</Value>
+          <Value>-1291</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-154</Value>
+          <Value>-5000</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -802,34 +1263,70 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>100</Value>
+          <Value>75</Value>
         </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Dimensions>
         <Dimension>
-          <ID>Weapons</ID>
-          <Name>Weapons</Name>
-          <DimensionID>Weapons</DimensionID>
+          <ID>Items</ID>
+          <Name>Предметы</Name>
+          <DimensionID>Items</DimensionID>
           <Attributes>
             <Attribute>
               <AttributeID>Id</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Tank Id</AttributeID>
+              <AttributeID>Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Maps</ID>
+          <Name>Карты</Name>
+          <DimensionID>Maps</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Name</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Users</ID>
+          <Name>Пользователи</Name>
+          <DimensionID>Users</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Nickname</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Shells</ID>
+          <Name>Снаряды</Name>
+          <DimensionID>Shells</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Id</AttributeID>
             </Attribute>
             <Attribute>
               <AttributeID>Type</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Caliber</AttributeID>
+              <AttributeID>Name</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
         <Dimension>
           <ID>Tanks</ID>
-          <Name>Tanks</Name>
+          <Name>Танки</Name>
           <DimensionID>Tanks</DimensionID>
           <Attributes>
             <Attribute>
@@ -844,48 +1341,50 @@
           </Attributes>
         </Dimension>
         <Dimension>
-          <ID>Users</ID>
-          <Name>Users</Name>
-          <DimensionID>Users</DimensionID>
+          <ID>Weapons</ID>
+          <Name>Орудия</Name>
+          <DimensionID>Weapons</DimensionID>
           <Attributes>
             <Attribute>
               <AttributeID>Id</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Nickname</AttributeID>
+              <AttributeID>Type</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Caliber</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
       </Dimensions>
       <MeasureGroups>
         <MeasureGroup>
-          <ID>Costs</ID>
-          <Name>Costs</Name>
+          <ID>Items Info</ID>
+          <Name>Информация о предметах</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>Value</ID>
-              <Name>Value</Name>
+              <ID>Цена</ID>
+              <Name>Цена</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Costs</TableID>
-                  <ColumnID>Value</ColumnID>
+                  <TableID>dbo_ItemsInfo</TableID>
+                  <ColumnID>Cost</ColumnID>
                 </Source>
               </Source>
             </Measure>
             <Measure>
-              <ID>Число Costs</ID>
-              <Name>Число Costs</Name>
-              <AggregateFunction>Count</AggregateFunction>
+              <ID>Бонус</ID>
+              <Name>Бонус</Name>
               <Source>
                 <DataType>Integer</DataType>
-                <DataSize>4</DataSize>
-                <Source xsi:type="RowBinding">
-                  <TableID>dbo_Costs</TableID>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_ItemsInfo</TableID>
+                  <ColumnID>Bonus</ColumnID>
                 </Source>
               </Source>
             </Measure>
@@ -894,7 +1393,7 @@
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Tanks</CubeDimensionID>
+              <CubeDimensionID>Items</CubeDimensionID>
               <Attributes>
                 <Attribute>
                   <AttributeID>Id</AttributeID>
@@ -902,8 +1401,8 @@
                     <KeyColumn>
                       <DataType>Integer</DataType>
                       <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_Costs</TableID>
-                        <ColumnID>TankId</ColumnID>
+                        <TableID>dbo_ItemsInfo</TableID>
+                        <ColumnID>ItemId</ColumnID>
                       </Source>
                     </KeyColumn>
                   </KeyColumns>
@@ -914,15 +1413,75 @@
           </Dimensions>
           <Partitions>
             <Partition>
-              <ID>Costs</ID>
-              <Name>Costs</Name>
+              <ID>Items Info</ID>
+              <Name>Items Info</Name>
               <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
               <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
               <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
               <State>Unprocessed</State>
               <Source xsi:type="DsvTableBinding">
                 <DataSourceViewID>WOT</DataSourceViewID>
-                <TableID>dbo_Costs</TableID>
+                <TableID>dbo_ItemsInfo</TableID>
+              </Source>
+              <StorageMode>Molap</StorageMode>
+              <CurrentStorageMode>Molap</CurrentStorageMode>
+              <ProcessingMode>Regular</ProcessingMode>
+            </Partition>
+          </Partitions>
+        </MeasureGroup>
+        <MeasureGroup>
+          <ID>Map Info</ID>
+          <Name>Информация о картах</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Measures>
+            <Measure>
+              <ID>Площадь</ID>
+              <Name>Площадь</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_MapInfo</TableID>
+                  <ColumnID>Area</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+          </Measures>
+          <StorageMode>Molap</StorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <Dimensions>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Maps</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_MapInfo</TableID>
+                        <ColumnID>MapId</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Partitions>
+            <Partition>
+              <ID>Map Info</ID>
+              <Name>Map Info</Name>
+              <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+              <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+              <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+              <State>Unprocessed</State>
+              <Source xsi:type="DsvTableBinding">
+                <DataSourceViewID>WOT</DataSourceViewID>
+                <TableID>dbo_MapInfo</TableID>
               </Source>
               <StorageMode>Molap</StorageMode>
               <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -932,15 +1491,15 @@
         </MeasureGroup>
         <MeasureGroup>
           <ID>Operations</ID>
-          <Name>Operations</Name>
+          <Name>Операции</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>TYPE</ID>
-              <Name>TYPE</Name>
+              <ID>Тип</ID>
+              <Name>Тип</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -950,8 +1509,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Value - Operations</ID>
-              <Name>Value - Operations</Name>
+              <ID>Количество</ID>
+              <Name>Количество</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -961,8 +1520,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Число Operations</ID>
-              <Name>Число Operations</Name>
+              <ID>Количество операций</ID>
+              <Name>Количество операций</Name>
               <AggregateFunction>Count</AggregateFunction>
               <Source>
                 <DataType>Integer</DataType>
@@ -1014,77 +1573,76 @@
           </Partitions>
         </MeasureGroup>
         <MeasureGroup>
-          <ID>Shells</ID>
-          <Name>Shells</Name>
+          <ID>Shell Stats</ID>
+          <Name>Статистика снарядов</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>Type - Shells</ID>
-              <Name>Type - Shells</Name>
+              <ID>Пробитие</ID>
+              <Name>Пробитие</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Shells</TableID>
-                  <ColumnID>Type</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
-            <Measure>
-              <ID>Penetration</ID>
-              <Name>Penetration</Name>
-              <Source>
-                <DataType>Integer</DataType>
-                <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Shells</TableID>
+                  <TableID>dbo_ShellStats</TableID>
                   <ColumnID>Penetration</ColumnID>
                 </Source>
               </Source>
             </Measure>
             <Measure>
-              <ID>Speed</ID>
-              <Name>Speed</Name>
+              <ID>Скорость</ID>
+              <Name>Скорость</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Shells</TableID>
+                  <TableID>dbo_ShellStats</TableID>
                   <ColumnID>Speed</ColumnID>
                 </Source>
               </Source>
             </Measure>
             <Measure>
-              <ID>Velocity</ID>
-              <Name>Velocity</Name>
+              <ID>Ускорение</ID>
+              <Name>Ускорение</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Shells</TableID>
+                  <TableID>dbo_ShellStats</TableID>
                   <ColumnID>Velocity</ColumnID>
                 </Source>
               </Source>
             </Measure>
             <Measure>
-              <ID>Cost</ID>
-              <Name>Cost</Name>
+              <ID>Стоимость</ID>
+              <Name>Стоимость</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Shells</TableID>
+                  <TableID>dbo_ShellStats</TableID>
                   <ColumnID>Cost</ColumnID>
                 </Source>
               </Source>
             </Measure>
             <Measure>
-              <ID>Число Shells</ID>
-              <Name>Число Shells</Name>
-              <AggregateFunction>Count</AggregateFunction>
+              <ID>Минимальное пробитие</ID>
+              <Name>Минимальное пробитие</Name>
               <Source>
-                <DataType>Integer</DataType>
-                <DataSize>4</DataSize>
-                <Source xsi:type="RowBinding">
-                  <TableID>dbo_Shells</TableID>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_ShellStats</TableID>
+                  <ColumnID>minPenetration</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Максиамальное пробитие</ID>
+              <Name>Максиамальное пробитие</Name>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_ShellStats</TableID>
+                  <ColumnID>maxPenetration</ColumnID>
                 </Source>
               </Source>
             </Measure>
@@ -1093,7 +1651,7 @@
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Weapons</CubeDimensionID>
+              <CubeDimensionID>Shells</CubeDimensionID>
               <Attributes>
                 <Attribute>
                   <AttributeID>Id</AttributeID>
@@ -1101,8 +1659,8 @@
                     <KeyColumn>
                       <DataType>Integer</DataType>
                       <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_Shells</TableID>
-                        <ColumnID>WeaponId</ColumnID>
+                        <TableID>dbo_ShellStats</TableID>
+                        <ColumnID>ShellId</ColumnID>
                       </Source>
                     </KeyColumn>
                   </KeyColumns>
@@ -1110,31 +1668,18 @@
                 </Attribute>
               </Attributes>
             </Dimension>
-            <Dimension xsi:type="ReferenceMeasureGroupDimension">
-              <CubeDimensionID>Tanks</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Id</AttributeID>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-              <IntermediateCubeDimensionID>Weapons</IntermediateCubeDimensionID>
-              <IntermediateGranularityAttributeID>Tank Id</IntermediateGranularityAttributeID>
-              <Materialization>Regular</Materialization>
-              <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-            </Dimension>
           </Dimensions>
           <Partitions>
             <Partition>
-              <ID>Shells</ID>
-              <Name>Shells</Name>
+              <ID>Shell Stats</ID>
+              <Name>Shell Stats</Name>
               <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
               <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
               <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
               <State>Unprocessed</State>
               <Source xsi:type="DsvTableBinding">
                 <DataSourceViewID>WOT</DataSourceViewID>
-                <TableID>dbo_Shells</TableID>
+                <TableID>dbo_ShellStats</TableID>
               </Source>
               <StorageMode>Molap</StorageMode>
               <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -1144,15 +1689,15 @@
         </MeasureGroup>
         <MeasureGroup>
           <ID>Tank Stats</ID>
-          <Name>Tank Stats</Name>
+          <Name>Статистика танков</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>AVG Damage</ID>
-              <Name>AVG Damage</Name>
+              <ID>Средний урон</ID>
+              <Name>Средний урон</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1162,8 +1707,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Accuracy</ID>
-              <Name>Accuracy</Name>
+              <ID>Точность</ID>
+              <Name>Точность</Name>
               <Source>
                 <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1171,11 +1716,10 @@
                   <ColumnID>Accuracy</ColumnID>
                 </Source>
               </Source>
-              <FormatString># ##0,000;-# ##0,000</FormatString>
             </Measure>
             <Measure>
-              <ID>Winrate</ID>
-              <Name>Winrate</Name>
+              <ID>Винрейт</ID>
+              <Name>Винрейт</Name>
               <Source>
                 <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1183,11 +1727,10 @@
                   <ColumnID>Winrate</ColumnID>
                 </Source>
               </Source>
-              <FormatString># ##0,000;-# ##0,000</FormatString>
             </Measure>
             <Measure>
-              <ID>Matches</ID>
-              <Name>Matches</Name>
+              <ID>Количество матчей</ID>
+              <Name>Количество матчей</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1197,8 +1740,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>AVG Exp</ID>
-              <Name>AVG Exp</Name>
+              <ID>Средний опыт</ID>
+              <Name>Средний опыт</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1208,8 +1751,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Shots</ID>
-              <Name>Shots</Name>
+              <ID>Количество выстрелов</ID>
+              <Name>Количество выстрелов</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1219,8 +1762,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Penetrations</ID>
-              <Name>Penetrations</Name>
+              <ID>Пробития</ID>
+              <Name>Пробития</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1230,8 +1773,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Hits</ID>
-              <Name>Hits</Name>
+              <ID>Попадания</ID>
+              <Name>Попадания</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1241,8 +1784,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>AVG Light Damage</ID>
-              <Name>AVG Light Damage</Name>
+              <ID>Средний насвет</ID>
+              <Name>Средний насвет</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1252,25 +1795,13 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>AVG Block</ID>
-              <Name>AVG Block</Name>
+              <ID>Среднее количество заблокированного урона</ID>
+              <Name>Среднее количество заблокированного урона</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>dbo_TankStats</TableID>
                   <ColumnID>AVGBlock</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
-            <Measure>
-              <ID>Число Tank Stats</ID>
-              <Name>Число Tank Stats</Name>
-              <AggregateFunction>Count</AggregateFunction>
-              <Source>
-                <DataType>Integer</DataType>
-                <DataSize>4</DataSize>
-                <Source xsi:type="RowBinding">
-                  <TableID>dbo_TankStats</TableID>
                 </Source>
               </Source>
             </Measure>
@@ -1317,15 +1848,15 @@
         </MeasureGroup>
         <MeasureGroup>
           <ID>TT Cs</ID>
-          <Name>TT Cs</Name>
+          <Name>ТТХ танков</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>Clocking</ID>
-              <Name>Clocking</Name>
+              <ID>Маскировка</ID>
+              <Name>Маскировка</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1335,8 +1866,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Speed - TT Cs</ID>
-              <Name>Speed - TT Cs</Name>
+              <ID>Скорость Танка</ID>
+              <Name>Скорость Танка</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1346,8 +1877,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Velocity - TT Cs</ID>
-              <Name>Velocity - TT Cs</Name>
+              <ID>Ускорение танка</ID>
+              <Name>Ускорение танка</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1357,8 +1888,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Engine Power</ID>
-              <Name>Engine Power</Name>
+              <ID>Мощность двигателя</ID>
+              <Name>Мощность двигателя</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1368,25 +1899,13 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Weight</ID>
-              <Name>Weight</Name>
+              <ID>Вес</ID>
+              <Name>Вес</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>dbo_TTCs</TableID>
                   <ColumnID>Weight</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
-            <Measure>
-              <ID>Число TT Cs</ID>
-              <Name>Число TT Cs</Name>
-              <AggregateFunction>Count</AggregateFunction>
-              <Source>
-                <DataType>Integer</DataType>
-                <DataSize>4</DataSize>
-                <Source xsi:type="RowBinding">
-                  <TableID>dbo_TTCs</TableID>
                 </Source>
               </Source>
             </Measure>
@@ -1433,15 +1952,15 @@
         </MeasureGroup>
         <MeasureGroup>
           <ID>User Stats</ID>
-          <Name>User Stats</Name>
+          <Name>Статистика пользователей</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>AVG Damage - User Stats</ID>
-              <Name>AVG Damage - User Stats</Name>
+              <ID>Средний урон пользователя</ID>
+              <Name>Средний урон пользователя</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1451,8 +1970,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Accuracy - User Stats</ID>
-              <Name>Accuracy - User Stats</Name>
+              <ID>Точность пользователя</ID>
+              <Name>Точность пользователя</Name>
               <Source>
                 <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1460,11 +1979,10 @@
                   <ColumnID>Accuracy</ColumnID>
                 </Source>
               </Source>
-              <FormatString># ##0,000;-# ##0,000</FormatString>
             </Measure>
             <Measure>
-              <ID>Winrate - User Stats</ID>
-              <Name>Winrate - User Stats</Name>
+              <ID>Винрейт пользователя</ID>
+              <Name>Винрейт пользователя</Name>
               <Source>
                 <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1472,11 +1990,10 @@
                   <ColumnID>Winrate</ColumnID>
                 </Source>
               </Source>
-              <FormatString># ##0,000;-# ##0,000</FormatString>
             </Measure>
             <Measure>
-              <ID>Matches - User Stats</ID>
-              <Name>Matches - User Stats</Name>
+              <ID>Количество матчей пользователя</ID>
+              <Name>Количество матчей пользователя</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1486,8 +2003,8 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>AVG Exp - User Stats</ID>
-              <Name>AVG Exp - User Stats</Name>
+              <ID>Средний опыт пользователя</ID>
+              <Name>Средний опыт пользователя</Name>
               <Source>
                 <DataType>Double</DataType>
                 <Source xsi:type="ColumnBinding">
@@ -1497,14 +2014,13 @@
               </Source>
             </Measure>
             <Measure>
-              <ID>Число User Stats</ID>
-              <Name>Число User Stats</Name>
-              <AggregateFunction>Count</AggregateFunction>
+              <ID>Максимальная точность с бонусами</ID>
+              <Name>Максимальная точность с бонусами</Name>
               <Source>
-                <DataType>Integer</DataType>
-                <DataSize>4</DataSize>
-                <Source xsi:type="RowBinding">
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
                   <TableID>dbo_UserStats</TableID>
+                  <ColumnID>maxAccuracyWithBonuses</ColumnID>
                 </Source>
               </Source>
             </Measure>
@@ -1550,44 +2066,32 @@
           </Partitions>
         </MeasureGroup>
         <MeasureGroup>
-          <ID>Weapons</ID>
-          <Name>Weapons</Name>
+          <ID>Weapon Stats</ID>
+          <Name>Статистика орудий</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>Type - Weapons</ID>
-              <Name>Type - Weapons</Name>
+              <ID>Вес орудия</ID>
+              <Name>Вес орудия</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Weapons</TableID>
-                  <ColumnID>Type</ColumnID>
+                  <TableID>dbo_WeaponStats</TableID>
+                  <ColumnID>Weight</ColumnID>
                 </Source>
               </Source>
             </Measure>
             <Measure>
-              <ID>Caliber</ID>
-              <Name>Caliber</Name>
+              <ID>Калибр</ID>
+              <Name>Калибр</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
-                  <TableID>dbo_Weapons</TableID>
+                  <TableID>dbo_WeaponStats</TableID>
                   <ColumnID>Caliber</ColumnID>
-                </Source>
-              </Source>
-            </Measure>
-            <Measure>
-              <ID>Число Weapons</ID>
-              <Name>Число Weapons</Name>
-              <AggregateFunction>Count</AggregateFunction>
-              <Source>
-                <DataType>Integer</DataType>
-                <DataSize>4</DataSize>
-                <Source xsi:type="RowBinding">
-                  <TableID>dbo_Weapons</TableID>
                 </Source>
               </Source>
             </Measure>
@@ -1595,7 +2099,7 @@
           <StorageMode>Molap</StorageMode>
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
-            <Dimension xsi:type="DegenerateMeasureGroupDimension">
+            <Dimension xsi:type="RegularMeasureGroupDimension">
               <CubeDimensionID>Weapons</CubeDimensionID>
               <Attributes>
                 <Attribute>
@@ -1604,26 +2108,8 @@
                     <KeyColumn>
                       <DataType>Integer</DataType>
                       <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_Weapons</TableID>
-                        <ColumnID>Id</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Tanks</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_Weapons</TableID>
-                        <ColumnID>TankId</ColumnID>
+                        <TableID>dbo_WeaponStats</TableID>
+                        <ColumnID>WeaponId</ColumnID>
                       </Source>
                     </KeyColumn>
                   </KeyColumns>
@@ -1634,15 +2120,15 @@
           </Dimensions>
           <Partitions>
             <Partition>
-              <ID>Weapons</ID>
-              <Name>Weapons</Name>
+              <ID>Weapon Stats</ID>
+              <Name>Weapon Stats</Name>
               <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
               <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
               <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
               <State>Unprocessed</State>
               <Source xsi:type="DsvTableBinding">
                 <DataSourceViewID>WOT</DataSourceViewID>
-                <TableID>dbo_Weapons</TableID>
+                <TableID>dbo_WeaponStats</TableID>
               </Source>
               <StorageMode>Molap</StorageMode>
               <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -1703,7 +2189,7 @@
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="17" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3625" scrolltop="-1133" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="32941" y="18389" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="27" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="5365" scrolltop="-2321" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="32941" y="16325" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
                       </font>
@@ -1714,18 +2200,62 @@
                     <layoutmanager>
                       <ddsxmlobj />
                     </layoutmanager>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Costs" left="5420" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="__RefactorLog" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1455" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000af050000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo___RefactorLog" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Items" left="23420" top="5455" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_Items" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ItemsInfo" left="23420" top="9734" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
                       </control>
                       <layoutobject>
                         <ddsxmlobj>
-                          <property name="LogicalObject" value="dbo_Costs" vartype="8" />
+                          <property name="LogicalObject" value="dbo_ItemsInfo" vartype="8" />
                         </ddsxmlobj>
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Operations" left="22220" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="MapInfo" left="17420" top="9734" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_MapInfo" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Maps" left="17420" top="5455" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_Maps" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Operations" left="6020" top="11004" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
                       </control>
@@ -1736,9 +2266,9 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shells" left="20" top="1716" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Shells" left="20" top="11427" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
-                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
                       </control>
                       <layoutobject>
                         <ddsxmlobj>
@@ -1747,7 +2277,18 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tanks" left="5420" top="5125" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ShellStats" left="20" top="5455" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000f40d0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_ShellStats" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Tanks" left="34820" top="11850" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
                       </control>
@@ -1758,7 +2299,7 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TankStats" left="5420" top="10673" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3466" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TankStats" left="40220" top="10501" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3466" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e00008a0d000088130000" />
                       </control>
@@ -1769,7 +2310,7 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TTCs" left="10820" top="4279" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="TTCs" left="34820" top="5455" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
                       </control>
@@ -1780,7 +2321,7 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="16820" top="423" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Users" left="6020" top="6725" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
                       </control>
@@ -1791,7 +2332,7 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserStats" left="16820" top="4702" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="UserStats" left="11420" top="5455" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
                       </control>
@@ -1802,7 +2343,7 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Weapons" left="20" top="8111" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Weapons" left="29420" top="14201" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
                       </control>
@@ -1813,7 +2354,18 @@
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="2425" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="WeaponStats" left="29420" top="9076" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_WeaponStats" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="24521" top="6835" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1821,17 +2373,35 @@
                       </control>
                       <layoutobject>
                         <ddsxmlobj>
-                          <property name="LogicalObject" value="dataSet.Relations[FK_CostTank]" vartype="8" />
+                          <property name="LogicalObject" value="dataSet.Relations[FK_Item]" vartype="8" />
                           <property name="Virtual" value="0" vartype="11" />
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="6920" y="5125" />
-                        <point x="6920" y="2725" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="24920" y="7334" />
+                        <point x="24920" y="9734" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="19520" top="963" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="18521" top="6835" logicalid="19" controlid="19" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_Map]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="5" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="18920" y="7334" />
+                        <point x="18920" y="9734" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="7121" top="8105" logicalid="20" controlid="20" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1844,12 +2414,12 @@
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="19820" y="1362" />
-                        <point x="22220" y="1362" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="7" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="7520" y="8604" />
+                        <point x="7520" y="11004" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="5411" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="8727" logicalid="21" controlid="21" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1857,17 +2427,17 @@
                       </control>
                       <layoutobject>
                         <ddsxmlobj>
-                          <property name="LogicalObject" value="dataSet.Relations[FK_ShellWeapon]" vartype="8" />
+                          <property name="LogicalObject" value="dataSet.Relations[FK_Shell]" vartype="8" />
                           <property name="Virtual" value="0" vartype="11" />
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="3" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="1520" y="8111" />
-                        <point x="1520" y="5711" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="9" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="1520" y="11427" />
+                        <point x="1520" y="9027" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="6521" top="6928" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="932" height="4045" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="37520" top="12602" logicalid="22" controlid="22" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1880,14 +2450,12 @@
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="6920" y="7427" />
-                        <point x="6920" y="9050" />
-                        <point x="7153" y="9050" />
-                        <point x="7153" y="10673" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="11" sourceattachpoint="13" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="37820" y="13001" />
+                        <point x="40220" y="13001" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="8120" top="5877" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="35921" top="9150" logicalid="23" controlid="23" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1900,12 +2468,12 @@
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="6" sourceattachpoint="13" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="8420" y="6276" />
-                        <point x="10820" y="6276" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="12" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="36320" y="11850" />
+                        <point x="36320" y="9450" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="17921" top="1803" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="8720" top="7265" logicalid="24" controlid="24" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1918,12 +2486,12 @@
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="8" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="18320" y="2302" />
-                        <point x="18320" y="4702" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="14" sourceattachpoint="13" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="9020" y="7664" />
+                        <point x="11420" y="7664" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="5877" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="3896" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="32120" top="12602" logicalid="25" controlid="25" masterid="0" hint1="0" hint2="0" width="3000" height="3261" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1931,27 +2499,45 @@
                       </control>
                       <layoutobject>
                         <ddsxmlobj>
-                          <property name="LogicalObject" value="dataSet.Relations[FK_WeaponTank]" vartype="8" />
+                          <property name="LogicalObject" value="dataSet.Relations[FK_Tank]" vartype="8" />
                           <property name="Virtual" value="0" vartype="11" />
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="9" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="5420" y="6276" />
-                        <point x="4220" y="6276" />
-                        <point x="4220" y="9473" />
-                        <point x="3020" y="9473" />
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="15" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="34820" y="13001" />
+                        <point x="33620" y="13001" />
+                        <point x="33620" y="15563" />
+                        <point x="32420" y="15563" />
+                      </connector>
+                    </ddscontrol>
+                    <ddscontrol controlprogid="MSDDS.Polyline" left="30521" top="11501" logicalid="26" controlid="26" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobj>
+                          <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                        </ddsxmlobj>
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dataSet.Relations[FK_Weapon]" vartype="8" />
+                          <property name="Virtual" value="0" vartype="11" />
+                          <property name="VisibleAP" value="0" vartype="3" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="15" destid="16" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                        <point x="30920" y="14201" />
+                        <point x="30920" y="11801" />
                       </connector>
                     </ddscontrol>
                   </dds>
 </DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-                <DiagramViewPortLeft>-3625</DiagramViewPortLeft>
-                <DiagramViewPortTop>-1133</DiagramViewPortTop>
+                <DiagramViewPortLeft>5365</DiagramViewPortLeft>
+                <DiagramViewPortTop>-2321</DiagramViewPortTop>
                 <DiagramBoundingLeft>0</DiagramBoundingLeft>
                 <DiagramBoundingTop>0</DiagramBoundingTop>
-                <DiagramZoom>100</DiagramZoom>
+                <DiagramZoom>75</DiagramZoom>
               </Diagram>
             </Layouts>
           </Value>
@@ -1960,98 +2546,61 @@
       <DataSourceID>WOT</DataSourceID>
       <Schema>
         <xs:schema id="WOT" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-          <xs:element name="WOT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4a1060aa-1e2f-4390-b826-377967bc6bbc">
+          <xs:element name="WOT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d8429d18-5ae8-4091-ba87-b59b827ae3c5">
             <xs:complexType>
               <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="dbo_Costs" msprop:design-time-name="8c3fa1b6-88aa-4e9b-a9bd-881549fdebe4" msprop:FriendlyName="Costs" msprop:DbSchemaName="dbo" msprop:DbTableName="Costs" msprop:TableType="Table">
+                <xs:element name="dbo___RefactorLog" msprop:design-time-name="66fad670-3d64-474f-b1ea-3971de4218c2" msprop:FriendlyName="__RefactorLog" msprop:DbSchemaName="dbo" msprop:DbTableName="__RefactorLog" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="27131050-5baf-4940-861e-8c02e5d3a83f" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Date" msprop:design-time-name="73ec42b2-e376-401b-8ade-907179d7a3bb" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
-                      <xs:element name="Value" msprop:design-time-name="2d95aa25-a309-4611-a887-adaf7b1b6a40" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" />
-                      <xs:element name="TankId" msprop:design-time-name="c4717327-ec79-496a-b1e4-0992048aabc0" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
+                      <xs:element name="OperationKey" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="a2418e32-d8c6-48ac-8e98-85ae1b0a62b7" msprop:DbColumnName="OperationKey" msprop:FriendlyName="OperationKey" type="xs:string" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Operations" msprop:design-time-name="0a0bffee-007d-4053-847e-172eae55e1fe" msprop:FriendlyName="Operations" msprop:DbSchemaName="dbo" msprop:DbTableName="Operations" msprop:TableType="Table">
+                <xs:element name="dbo_Items" msprop:design-time-name="3b27e96b-54b2-4f40-a791-2018ebec174d" msprop:FriendlyName="Items" msprop:DbSchemaName="dbo" msprop:DbTableName="Items" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="3bb9e522-7256-48fe-9ffd-c6e4fa2cb976" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="TYPE" msprop:design-time-name="c6609f18-ff42-4bb4-8a1b-590f2620ab3c" msprop:DbColumnName="TYPE" msprop:FriendlyName="TYPE" type="xs:int" />
-                      <xs:element name="Value" msprop:design-time-name="0e87a330-cdba-4a83-b9d5-51159682ec6d" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" />
-                      <xs:element name="UserId" msprop:design-time-name="616526ff-56a5-4c6e-86b8-cb0be0115c1d" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" />
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="dbo_Shells" msprop:design-time-name="110fc733-fa66-4ae3-822d-389a9e15cf20" msprop:FriendlyName="Shells" msprop:DbSchemaName="dbo" msprop:DbTableName="Shells" msprop:TableType="Table">
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="5db46ba8-544b-4ca8-b42c-7d4550ab1f8b" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Type" msprop:design-time-name="898583df-215f-43e1-898a-f7ded1c7ab22" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" />
-                      <xs:element name="Penetration" msprop:design-time-name="1b33390f-8776-4e64-907d-845b6dd6809e" msprop:DbColumnName="Penetration" msprop:FriendlyName="Penetration" type="xs:int" />
-                      <xs:element name="Speed" msprop:design-time-name="afb3d1f5-4e3f-41e4-a73d-aa2167490bd2" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" />
-                      <xs:element name="Velocity" msprop:design-time-name="47e16632-8479-4119-8f4f-ff1cf65af2bb" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" />
-                      <xs:element name="Cost" msprop:design-time-name="a52eeb4d-ba76-436f-88ad-f09927e19676" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" />
-                      <xs:element name="WeaponId" msprop:design-time-name="8b6460f1-b69a-45c2-a9ca-dd570c27dbf1" msprop:DbColumnName="WeaponId" msprop:FriendlyName="WeaponId" type="xs:int" />
-                      <xs:element name="KmTime" msdata:ReadOnly="true" msprop:design-time-name="4b180588-b977-4be0-b8f6-8b21f38100e2" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="KmTime" msprop:ComputedColumnExpression="1000 / Speed" type="xs:int" minOccurs="0" />
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="dbo_Tanks" msprop:design-time-name="bb60fe46-4e38-4c94-9bb0-7495836c6829" msprop:FriendlyName="Tanks" msprop:DbSchemaName="dbo" msprop:DbTableName="Tanks" msprop:TableType="Table">
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="a2179d55-02c8-482e-ab78-36a100807fde" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Name" msprop:design-time-name="5c6c01cf-8609-4025-8876-11688a537db4" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                      <xs:element name="Id" msprop:design-time-name="1ff27272-7733-4557-9450-76bc6f728e48" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Name" msprop:design-time-name="c85cf521-577d-4fe7-963e-e035b6e5c774" msprop:DbColumnName="Name" msprop:FriendlyName="Name">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
-                            <xs:maxLength value="120" />
+                            <xs:maxLength value="1" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="LVL" msprop:design-time-name="75d3de5f-cc9e-44ec-a580-2e5976f4e4f0" msprop:DbColumnName="LVL" msprop:FriendlyName="LVL" type="xs:int" minOccurs="0" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_TankStats" msprop:design-time-name="81b41ae5-4a3f-415b-b323-ace9bc71c08e" msprop:FriendlyName="TankStats" msprop:DbSchemaName="dbo" msprop:DbTableName="TankStats" msprop:TableType="Table">
+                <xs:element name="dbo_ItemsInfo" msprop:design-time-name="945f15b4-a67c-4230-bba3-c995dd798b00" msprop:FriendlyName="ItemsInfo" msprop:DbSchemaName="dbo" msprop:DbTableName="ItemsInfo" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="446cc8fc-9ad1-4b9f-8da4-ffb836a226aa" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Date" msprop:design-time-name="5cfaef3b-57d2-4f1a-9e36-5af0317f20a5" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
-                      <xs:element name="AVGDamage" msprop:design-time-name="f1e133e9-ff07-4d88-adb3-8c6501c2a587" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" />
-                      <xs:element name="Accuracy" msprop:design-time-name="0cbacc29-9837-4c72-a420-162e6fc1f1c8" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" />
-                      <xs:element name="Winrate" msprop:design-time-name="90154053-d394-4e52-bf45-f2b1b3c4acd4" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" />
-                      <xs:element name="Matches" msprop:design-time-name="c4bd6484-1ede-4b2e-8994-ed0e7ca46453" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" />
-                      <xs:element name="AVGExp" msprop:design-time-name="83e7afbd-b693-49bf-b054-a29aa6824771" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:int" />
-                      <xs:element name="TankId" msprop:design-time-name="ee2022ab-65fb-4d94-a9ab-c439ee8fefd6" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
-                      <xs:element name="Shots" msprop:design-time-name="4097b671-bbc2-4937-8524-7b3a13a756d7" msprop:DbColumnName="Shots" msprop:FriendlyName="Shots" type="xs:int" />
-                      <xs:element name="Penetrations" msprop:design-time-name="3053f6ed-99a4-4681-9a25-398f2ad9bf3f" msprop:DbColumnName="Penetrations" msprop:FriendlyName="Penetrations" type="xs:int" />
-                      <xs:element name="Hits" msprop:design-time-name="6c1824e7-b3cc-475a-a219-5886f8483751" msprop:DbColumnName="Hits" msprop:FriendlyName="Hits" type="xs:int" />
-                      <xs:element name="AVGLightDamage" msprop:design-time-name="55bf6fd1-7e31-4756-b418-1bff66c75126" msprop:DbColumnName="AVGLightDamage" msprop:FriendlyName="AVGLightDamage" type="xs:int" />
-                      <xs:element name="AVGBlock" msprop:design-time-name="b36b0eca-2954-4c5d-94fc-bb233c9dbf00" msprop:DbColumnName="AVGBlock" msprop:FriendlyName="AVGBlock" type="xs:int" />
-                      <xs:element name="TotalExp" msdata:ReadOnly="true" msprop:design-time-name="9d58b576-2238-413b-9e8b-a300074b1bb5" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="TotalExp" msprop:ComputedColumnExpression="AVGExp * Matches" type="xs:int" minOccurs="0" />
-                      <xs:element name="WinCount" msdata:ReadOnly="true" msprop:design-time-name="e8e73964-d9ed-4557-a6c2-0216e901ac56" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="WinCount" msprop:ComputedColumnExpression="Matches * Winrate" type="xs:double" />
+                      <xs:element name="Id" msprop:design-time-name="178018dd-08ea-4f5c-b8e0-c02683d80417" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Cost" msprop:design-time-name="c7f21c12-77fe-4b06-b9e5-ecee4e74711c" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" />
+                      <xs:element name="Bonus" msprop:design-time-name="e0afaaf4-6e35-411a-900e-b16a707b1913" msprop:DbColumnName="Bonus" msprop:FriendlyName="Bonus" type="xs:int" />
+                      <xs:element name="ItemId" msprop:design-time-name="cbaf0eb7-a807-4f28-890e-5a45c154b46c" msprop:DbColumnName="ItemId" msprop:FriendlyName="ItemId" type="xs:int" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_TTCs" msprop:design-time-name="bc6dbc73-814f-4242-b0e0-236ead5e03d1" msprop:FriendlyName="TTCs" msprop:DbSchemaName="dbo" msprop:DbTableName="TTCs" msprop:TableType="Table">
+                <xs:element name="dbo_MapInfo" msprop:design-time-name="cacc62f1-5169-44e9-bb11-59253a6b0a60" msprop:FriendlyName="MapInfo" msprop:DbSchemaName="dbo" msprop:DbTableName="MapInfo" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="0b87a48e-0bb2-4593-8fd0-c3b7b396712c" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Clocking" msprop:design-time-name="243d68ab-e78a-485b-b536-a3e3a70ab248" msprop:DbColumnName="Clocking" msprop:FriendlyName="Clocking" type="xs:int" />
-                      <xs:element name="Speed" msprop:design-time-name="eedc6b8f-3cbb-4f83-9272-33e1e15452e8" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" />
-                      <xs:element name="Velocity" msprop:design-time-name="b92e287d-d630-4813-8f24-02c93496589a" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" />
-                      <xs:element name="EnginePower" msprop:design-time-name="3aa197d0-8173-4a29-9437-08026ad91859" msprop:DbColumnName="EnginePower" msprop:FriendlyName="EnginePower" type="xs:int" />
-                      <xs:element name="Weight" msprop:design-time-name="1aa67c34-801e-41c2-9120-5fceddf3b79a" msprop:DbColumnName="Weight" msprop:FriendlyName="Weight" type="xs:int" />
-                      <xs:element name="TankId" msprop:design-time-name="aa4414f2-d1b0-42b6-a968-371f4d0b00ba" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
-                      <xs:element name="SpecificEnginePower" msdata:ReadOnly="true" msprop:design-time-name="f27475e6-99f7-4da4-b4e2-cdff4308f729" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="SpecificEnginePower" msprop:ComputedColumnExpression="EnginePower / Weight" type="xs:int" minOccurs="0" />
+                      <xs:element name="Id" msprop:design-time-name="f98caa36-ec91-4b25-ad16-38f3a42f5d84" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Area" msprop:design-time-name="4ccaf193-d336-471c-921f-2d6282430275" msprop:DbColumnName="Area" msprop:FriendlyName="Area" type="xs:int" />
+                      <xs:element name="Season" msprop:design-time-name="5b3e9edc-092f-4e29-8121-4b65e767fb96" msprop:DbColumnName="Season" msprop:FriendlyName="Season">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="30" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MapId" msprop:design-time-name="49152ed9-c721-476d-aaf8-c7f626be00e3" msprop:DbColumnName="MapId" msprop:FriendlyName="MapId" type="xs:int" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Users" msprop:design-time-name="fa221854-5b27-4154-babb-d957b9eea2b9" msprop:FriendlyName="Users" msprop:DbSchemaName="dbo" msprop:DbTableName="Users" msprop:TableType="Table">
+                <xs:element name="dbo_Maps" msprop:design-time-name="fa2a4b5d-8947-4c5f-98da-b6017ad618b6" msprop:FriendlyName="Maps" msprop:DbSchemaName="dbo" msprop:DbTableName="Maps" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="45981975-0951-4bfa-9d05-51343f8dcc53" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Nickname" msprop:design-time-name="bafb015e-4ab5-4ea7-93e6-94f82ea306ff" msprop:DbColumnName="Nickname" msprop:FriendlyName="Nickname">
+                      <xs:element name="Id" msprop:design-time-name="b5c71294-8e98-4212-8f19-1b38674d5514" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Name" msprop:design-time-name="49793d97-c5f5-4163-b29c-759b88acb984" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="120" />
@@ -2061,36 +2610,161 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_UserStats" msprop:design-time-name="0e6f4fb9-e9bf-4759-810f-f4a857507400" msprop:FriendlyName="UserStats" msprop:DbSchemaName="dbo" msprop:DbTableName="UserStats" msprop:TableType="Table">
+                <xs:element name="dbo_Operations" msprop:design-time-name="65d05881-3eff-4f92-9d54-4d24ec1d888d" msprop:FriendlyName="Operations" msprop:DbSchemaName="dbo" msprop:DbTableName="Operations" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="8a01d34a-45d0-45a8-b554-7896ae961633" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Date" msprop:design-time-name="dfe20922-23ca-4314-bcb8-a87e731d6b4e" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
-                      <xs:element name="AVGDamage" msprop:design-time-name="236ba635-ea59-41c1-9731-db8f213d14ed" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" />
-                      <xs:element name="Accuracy" msprop:design-time-name="ac844b8e-3623-44ad-a650-534f6efd652b" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" />
-                      <xs:element name="Winrate" msprop:design-time-name="9ed7fb93-1bb0-46b9-8fb8-5416683c6932" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" />
-                      <xs:element name="Matches" msprop:design-time-name="637859ab-ebf2-47f9-b505-52d968b683e2" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" />
-                      <xs:element name="AVGExp" msprop:design-time-name="d5ac653a-671f-4617-9884-dd655f53ee5b" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:double" />
-                      <xs:element name="UserId" msprop:design-time-name="77de0eb2-d6e2-4c79-b3b0-7b0366c8cc40" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" />
-                      <xs:element name="TotalDamage" msdata:ReadOnly="true" msprop:design-time-name="ffba936a-9412-4bbe-932f-636a37be8d12" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="TotalDamage" msprop:ComputedColumnExpression="AVGDamage * Matches" type="xs:int" minOccurs="0" />
-                      <xs:element name="WinCount" msdata:ReadOnly="true" msprop:design-time-name="87529a87-8542-44c1-adcc-afcd2549795d" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="WinCount" msprop:ComputedColumnExpression="Matches * Winrate" type="xs:double" />
+                      <xs:element name="Id" msprop:design-time-name="3e005e30-58e7-4880-8cde-d7aa6528daca" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="TYPE" msprop:design-time-name="efb6ed53-dfc0-46db-bfa2-2e28a586a739" msprop:DbColumnName="TYPE" msprop:FriendlyName="TYPE" type="xs:int" />
+                      <xs:element name="Value" msprop:design-time-name="850adc4b-5875-45db-8622-6e04dab3f127" msprop:DbColumnName="Value" msprop:FriendlyName="Value" type="xs:int" />
+                      <xs:element name="UserId" msprop:design-time-name="edcb3c90-df89-4fb0-a21e-7f06b5e100b0" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_Weapons" msprop:design-time-name="cae8e6c0-88ab-48d9-9965-b1069e25e2d7" msprop:FriendlyName="Weapons" msprop:DbSchemaName="dbo" msprop:DbTableName="Weapons" msprop:TableType="Table">
+                <xs:element name="dbo_Shells" msprop:design-time-name="e1882110-96d0-462a-a91e-309ed13e2814" msprop:FriendlyName="Shells" msprop:DbSchemaName="dbo" msprop:DbTableName="Shells" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Id" msprop:design-time-name="44e7de2f-a9d6-425d-bd78-09e33d276ab0" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
-                      <xs:element name="Type" msprop:design-time-name="08f2851f-ba24-4221-ac68-4b1e91aa213a" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" />
-                      <xs:element name="Caliber" msprop:design-time-name="49e0c56b-8dc3-468f-b267-ab83dbaa7dbb" msprop:DbColumnName="Caliber" msprop:FriendlyName="Caliber" type="xs:int" />
-                      <xs:element name="TankId" msprop:design-time-name="935a18d3-af1e-411b-a0d1-8a10765e8bf3" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
+                      <xs:element name="Id" msprop:design-time-name="34fe2d74-02ea-4033-83ca-eae0ce91b370" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Type" msprop:design-time-name="cf63b361-8f20-462a-baa7-6ea854f5a8b9" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" />
+                      <xs:element name="Name" msprop:design-time-name="0435ceab-6377-4971-95e3-cdd5e4f0bbea" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="120" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_ShellStats" msprop:design-time-name="2904b649-a6a7-4cca-a067-fc34b0023a08" msprop:FriendlyName="ShellStats" msprop:DbSchemaName="dbo" msprop:DbTableName="ShellStats" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="8da15e9a-6be7-424b-9646-d298246b765a" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Penetration" msprop:design-time-name="21f18a12-9857-4810-abb6-f568b827802e" msprop:DbColumnName="Penetration" msprop:FriendlyName="Penetration" type="xs:int" />
+                      <xs:element name="Speed" msprop:design-time-name="b83ad872-a5b2-4399-b617-7347a9c7342b" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" />
+                      <xs:element name="Velocity" msprop:design-time-name="82f31780-06bc-40e4-84c9-a0b1f4617158" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" />
+                      <xs:element name="Cost" msprop:design-time-name="7ecf7c9c-5a47-4230-be7b-cf2e6505e2f1" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" />
+                      <xs:element name="ShellId" msprop:design-time-name="45515afe-921d-43b9-a2cb-ce0071bbdaf1" msprop:DbColumnName="ShellId" msprop:FriendlyName="ShellId" type="xs:int" />
+                      <xs:element name="minPenetration" msdata:ReadOnly="true" msprop:design-time-name="a76d16bb-51df-49e1-8452-10ac73091dbb" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="minPenetration" msprop:ComputedColumnExpression="Penetration * 0.95" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="maxPenetration" msdata:ReadOnly="true" msprop:design-time-name="223be9d5-adc9-450f-a85a-8377d65744fd" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="maxPenetration" msprop:ComputedColumnExpression="Penetration * 1.05" type="xs:decimal" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_Tanks" msprop:design-time-name="4c699c7e-6569-4d14-8913-be153ccf2e28" msprop:FriendlyName="Tanks" msprop:DbSchemaName="dbo" msprop:DbTableName="Tanks" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="5e708cf9-3ef9-4e51-9dc7-305eb8ef09b4" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Name" msprop:design-time-name="67b19b7e-2cb4-4e3d-b2a9-836dc6743565" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="120" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="LVL" msprop:design-time-name="6f182140-4948-4462-9a35-3f9f9842172a" msprop:DbColumnName="LVL" msprop:FriendlyName="LVL" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_TankStats" msprop:design-time-name="dda45b3d-585e-4a57-9a53-14c1ab89c6f6" msprop:FriendlyName="TankStats" msprop:DbSchemaName="dbo" msprop:DbTableName="TankStats" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="de77c0b8-a3c2-4b14-b201-8dc9781605b1" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Date" msprop:design-time-name="85bc2f4e-7db8-48f8-8664-4b1a4c330cc1" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                      <xs:element name="AVGDamage" msprop:design-time-name="f3377ef8-1b63-46d1-b653-6659ed1bfbed" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" />
+                      <xs:element name="Accuracy" msprop:design-time-name="8457f1e6-18c8-4448-8dcf-e21e3c6188fb" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" />
+                      <xs:element name="Winrate" msprop:design-time-name="f0d41169-2324-400b-8a87-8d917d70f052" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" />
+                      <xs:element name="Matches" msprop:design-time-name="b67b6a8e-1d65-46f1-a7ee-d2319bbc3140" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" />
+                      <xs:element name="AVGExp" msprop:design-time-name="f9a4f48c-5032-4725-8276-e35a9fbbdde8" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:int" />
+                      <xs:element name="TankId" msprop:design-time-name="7caa4ce7-8adb-436f-aa86-d4bdf7c18ccd" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
+                      <xs:element name="Shots" msprop:design-time-name="8bfdb833-b7be-42a1-a5cf-251fc8c77d58" msprop:DbColumnName="Shots" msprop:FriendlyName="Shots" type="xs:int" />
+                      <xs:element name="Penetrations" msprop:design-time-name="d735eaa9-4a2b-45f8-9465-7b13de83941b" msprop:DbColumnName="Penetrations" msprop:FriendlyName="Penetrations" type="xs:int" />
+                      <xs:element name="Hits" msprop:design-time-name="3460f2f4-0edc-45cd-b04f-227314464664" msprop:DbColumnName="Hits" msprop:FriendlyName="Hits" type="xs:int" />
+                      <xs:element name="AVGLightDamage" msprop:design-time-name="3ef6e770-5f25-456b-96d8-588843f07c0e" msprop:DbColumnName="AVGLightDamage" msprop:FriendlyName="AVGLightDamage" type="xs:int" />
+                      <xs:element name="AVGBlock" msprop:design-time-name="4531cd8c-eed2-4c0c-8e5c-12d90e732a8d" msprop:DbColumnName="AVGBlock" msprop:FriendlyName="AVGBlock" type="xs:int" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_TTCs" msprop:design-time-name="ea042009-6798-43fd-a838-51eba7ea14f0" msprop:FriendlyName="TTCs" msprop:DbSchemaName="dbo" msprop:DbTableName="TTCs" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="3013afde-4027-4fdd-8137-e79f31387cca" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Clocking" msprop:design-time-name="5b743409-755c-4a34-b7d6-52ca45ada866" msprop:DbColumnName="Clocking" msprop:FriendlyName="Clocking" type="xs:int" />
+                      <xs:element name="Speed" msprop:design-time-name="90425d8e-22b3-47bc-a498-5ea704bebab8" msprop:DbColumnName="Speed" msprop:FriendlyName="Speed" type="xs:int" />
+                      <xs:element name="Velocity" msprop:design-time-name="4d49c0eb-e284-4b6d-a6b6-329b367505f2" msprop:DbColumnName="Velocity" msprop:FriendlyName="Velocity" type="xs:int" />
+                      <xs:element name="EnginePower" msprop:design-time-name="a066e44c-4619-4162-baaf-8f11707b83c6" msprop:DbColumnName="EnginePower" msprop:FriendlyName="EnginePower" type="xs:int" />
+                      <xs:element name="Weight" msprop:design-time-name="3199ca26-0da9-46cf-8ec9-5d90ab0b7f14" msprop:DbColumnName="Weight" msprop:FriendlyName="Weight" type="xs:int" />
+                      <xs:element name="TankId" msprop:design-time-name="7754e34e-cf56-4086-9af9-8f97d80152cb" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_Users" msprop:design-time-name="2bcabd7f-9b3a-42d8-bcbb-21cce55d90d3" msprop:FriendlyName="Users" msprop:DbSchemaName="dbo" msprop:DbTableName="Users" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="db72d4d3-7b7c-4332-9702-2c7db376e986" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Nickname" msprop:design-time-name="92638712-d9c9-42c8-9218-72fe1ef49445" msprop:DbColumnName="Nickname" msprop:FriendlyName="Nickname">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="120" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_UserStats" msprop:design-time-name="5dece74b-f946-43ba-bf05-5d26927d3586" msprop:FriendlyName="UserStats" msprop:DbSchemaName="dbo" msprop:DbTableName="UserStats" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="4ff117eb-4f17-44dd-809d-7b017fe90634" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Date" msprop:design-time-name="0d968585-12d9-471a-bd73-38cf4bc1a66f" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" />
+                      <xs:element name="AVGDamage" msprop:design-time-name="5cac498b-eb9d-4e75-aaea-4631eff29e61" msprop:DbColumnName="AVGDamage" msprop:FriendlyName="AVGDamage" type="xs:int" />
+                      <xs:element name="Accuracy" msprop:design-time-name="3e6a7611-13a3-481d-a1e3-c7efbf3f780e" msprop:DbColumnName="Accuracy" msprop:FriendlyName="Accuracy" type="xs:double" />
+                      <xs:element name="Winrate" msprop:design-time-name="0f4530ee-d8b8-42bb-97f4-09ba1104a819" msprop:DbColumnName="Winrate" msprop:FriendlyName="Winrate" type="xs:double" />
+                      <xs:element name="Matches" msprop:design-time-name="91786c70-b69e-4d10-90b4-ee7ba98108be" msprop:DbColumnName="Matches" msprop:FriendlyName="Matches" type="xs:int" />
+                      <xs:element name="AVGExp" msprop:design-time-name="6003693d-48c1-4f08-ab9d-070d5df59ba8" msprop:DbColumnName="AVGExp" msprop:FriendlyName="AVGExp" type="xs:double" />
+                      <xs:element name="UserId" msprop:design-time-name="80ef5e5e-7909-4478-bb85-caa67057381d" msprop:DbColumnName="UserId" msprop:FriendlyName="UserId" type="xs:int" />
+                      <xs:element name="maxAccuracyWithBonuses" msdata:ReadOnly="true" msprop:design-time-name="ce806941-6f7b-41d6-95be-1e540976aa19" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="maxAccuracyWithBonuses" msprop:ComputedColumnExpression="Accuracy * 0.8" type="xs:double" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_Weapons" msprop:design-time-name="b25744f9-806b-4c6d-84cf-94d062c5b19b" msprop:FriendlyName="Weapons" msprop:DbSchemaName="dbo" msprop:DbTableName="Weapons" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="69655f8b-2744-41b1-b190-08a946997aea" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Type" msprop:design-time-name="2009de13-4c3b-4699-8237-7f95d1a3d922" msprop:DbColumnName="Type" msprop:FriendlyName="Type" type="xs:int" />
+                      <xs:element name="Caliber" msprop:design-time-name="e6a2240d-35ce-4eac-9b3d-dc089ae5261d" msprop:DbColumnName="Caliber" msprop:FriendlyName="Caliber" type="xs:int" />
+                      <xs:element name="TankId" msprop:design-time-name="bc4df8b2-dbe4-4581-9e64-cbce36b17b53" msprop:DbColumnName="TankId" msprop:FriendlyName="TankId" type="xs:int" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_WeaponStats" msprop:design-time-name="4718b607-873a-4888-8328-8ee0092cdac6" msprop:FriendlyName="WeaponStats" msprop:DbSchemaName="dbo" msprop:DbTableName="WeaponStats" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Id" msprop:design-time-name="2ba187d2-31f6-49bd-8719-6370475ebfc4" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                      <xs:element name="Weight" msprop:design-time-name="3bb9faec-9b86-4bdd-87b3-72c962202c5b" msprop:DbColumnName="Weight" msprop:FriendlyName="Weight" type="xs:int" />
+                      <xs:element name="Caliber" msprop:design-time-name="8d9c0dbe-97a3-456a-a1e1-9d0e0ee6d6da" msprop:DbColumnName="Caliber" msprop:FriendlyName="Caliber" type="xs:int" />
+                      <xs:element name="WeaponId" msprop:design-time-name="15b98f8f-df25-4627-b004-1a006f00dcff" msprop:DbColumnName="WeaponId" msprop:FriendlyName="WeaponId" type="xs:int" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
               </xs:choice>
             </xs:complexType>
             <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-              <xs:selector xpath=".//dbo_Costs" />
+              <xs:selector xpath=".//dbo___RefactorLog" />
+              <xs:field xpath="OperationKey" />
+            </xs:unique>
+            <xs:unique name="dbo_Items_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_Items" />
+              <xs:field xpath="Id" />
+            </xs:unique>
+            <xs:unique name="dbo_ItemsInfo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_ItemsInfo" />
+              <xs:field xpath="Id" />
+            </xs:unique>
+            <xs:unique name="dbo_MapInfo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_MapInfo" />
+              <xs:field xpath="Id" />
+            </xs:unique>
+            <xs:unique name="dbo_Maps_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_Maps" />
               <xs:field xpath="Id" />
             </xs:unique>
             <xs:unique name="dbo_Operations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
@@ -2099,6 +2773,10 @@
             </xs:unique>
             <xs:unique name="dbo_Shells_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//dbo_Shells" />
+              <xs:field xpath="Id" />
+            </xs:unique>
+            <xs:unique name="dbo_ShellStats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_ShellStats" />
               <xs:field xpath="Id" />
             </xs:unique>
             <xs:unique name="dbo_Tanks_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
@@ -2125,7 +2803,15 @@
               <xs:selector xpath=".//dbo_Weapons" />
               <xs:field xpath="Id" />
             </xs:unique>
-            <xs:keyref name="FK_WeaponTank" refer="dbo_Tanks_Constraint1">
+            <xs:unique name="dbo_WeaponStats_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_WeaponStats" />
+              <xs:field xpath="Id" />
+            </xs:unique>
+            <xs:keyref name="FK_Weapon" refer="dbo_Weapons_Constraint1">
+              <xs:selector xpath=".//dbo_WeaponStats" />
+              <xs:field xpath="WeaponId" />
+            </xs:keyref>
+            <xs:keyref name="FK_Tank" refer="dbo_Tanks_Constraint1">
               <xs:selector xpath=".//dbo_Weapons" />
               <xs:field xpath="TankId" />
             </xs:keyref>
@@ -2141,17 +2827,21 @@
               <xs:selector xpath=".//dbo_TankStats" />
               <xs:field xpath="TankId" />
             </xs:keyref>
-            <xs:keyref name="FK_ShellWeapon" refer="dbo_Weapons_Constraint1">
-              <xs:selector xpath=".//dbo_Shells" />
-              <xs:field xpath="WeaponId" />
+            <xs:keyref name="FK_Shell" refer="dbo_Shells_Constraint1">
+              <xs:selector xpath=".//dbo_ShellStats" />
+              <xs:field xpath="ShellId" />
             </xs:keyref>
             <xs:keyref name="FK_OperationUser" refer="dbo_Users_Constraint1">
               <xs:selector xpath=".//dbo_Operations" />
               <xs:field xpath="UserId" />
             </xs:keyref>
-            <xs:keyref name="FK_CostTank" refer="dbo_Tanks_Constraint1">
-              <xs:selector xpath=".//dbo_Costs" />
-              <xs:field xpath="TankId" />
+            <xs:keyref name="FK_Map" refer="dbo_Maps_Constraint1">
+              <xs:selector xpath=".//dbo_MapInfo" />
+              <xs:field xpath="MapId" />
+            </xs:keyref>
+            <xs:keyref name="FK_Item" refer="dbo_Items_Constraint1">
+              <xs:selector xpath=".//dbo_ItemsInfo" />
+              <xs:field xpath="ItemId" />
             </xs:keyref>
           </xs:element>
         </xs:schema>
@@ -2165,6 +2855,35 @@
       <Name>Role</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Members>
+        <Member>
+          <Name>aurav</Name>
+        </Member>
+      </Members>
+    </Role>
+    <Role>
+      <ID>Role 1</ID>
+      <Name>Role2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Description>role2</Description>
+      <Members>
+        <Member>
+          <Name>aurav</Name>
+        </Member>
+      </Members>
+    </Role>
+    <Role>
+      <ID>Role 2</ID>
+      <Name>Role3</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Description>role3</Description>
+      <Members>
+        <Member>
+          <Name>aurav</Name>
+        </Member>
+      </Members>
     </Role>
   </Roles>
   <DatabasePermissions>
@@ -2174,7 +2893,28 @@
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <RoleID>Role</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
       <Read>Allowed</Read>
+    </DatabasePermission>
+    <DatabasePermission>
+      <ID>DatabasePermission 1</ID>
+      <Name>DatabasePermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <Process>true</Process>
+      <Read>Allowed</Read>
+    </DatabasePermission>
+    <DatabasePermission>
+      <ID>DatabasePermission 2</ID>
+      <Name>DatabasePermission 2</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <Process>true</Process>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <Administer>true</Administer>
     </DatabasePermission>
   </DatabasePermissions>
 </Database>

@@ -1,19 +1,39 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a6a8c380-dc09-4b1a-ac66-669698d623d1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e47f888e-3300-4627-8732-ff270a59b2f4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>WOT</ID>
   <MeasureGroups>
     <MeasureGroup>
-      <ID>Costs</ID>
+      <ID>Items Info</ID>
       <Partitions>
-        <Partition dwd:design-time-name="ab36465b-c802-4228-bf8a-c8850257a8e1">
-          <ID>Costs</ID>
-          <Name>Costs</Name>
+        <Partition dwd:design-time-name="f24d2d1e-ecc6-4115-aa38-b31aab3aa904">
+          <ID>Items Info</ID>
+          <Name>Items Info</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e46a02d5-4b4f-4dd6-a212-f4444c3d1378">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="41f3ada6-9d0d-41e4-ab1b-ce68fd99a424">
             <DataSourceViewID>WOT</DataSourceViewID>
-            <TableID>dbo_Costs</TableID>
+            <TableID>dbo_ItemsInfo</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Map Info</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c6133e75-7d29-479f-b84e-52c95d1d7b67">
+          <ID>Map Info</ID>
+          <Name>Map Info</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="59fdfcfa-835c-404a-bf51-d0e38b73d8ba">
+            <DataSourceViewID>WOT</DataSourceViewID>
+            <TableID>dbo_MapInfo</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -24,14 +44,14 @@
     <MeasureGroup>
       <ID>Operations</ID>
       <Partitions>
-        <Partition dwd:design-time-name="4d042ef0-5d83-4c0e-b4ec-318155553d9e">
+        <Partition dwd:design-time-name="f1cbf295-b89e-4dcd-9f57-f67565a1454f">
           <ID>Operations</ID>
           <Name>Operations</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f8b6a18f-2cb7-4bcb-aea8-d95a301f0e1f">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f4ccf426-47d4-4bd2-8cc3-55362fa95136">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_Operations</TableID>
           </Source>
@@ -42,18 +62,18 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>Shells</ID>
+      <ID>Shell Stats</ID>
       <Partitions>
-        <Partition dwd:design-time-name="168e78f4-09d9-43ce-ad94-c2b09d8379d6">
-          <ID>Shells</ID>
-          <Name>Shells</Name>
+        <Partition dwd:design-time-name="a42e3e82-4976-4768-9ea2-da0df3bec9bb">
+          <ID>Shell Stats</ID>
+          <Name>Shell Stats</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="048d9233-def6-4a93-b4a5-205ed6e64994">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="07c6b854-bc59-4326-9572-4ae383a0aa76">
             <DataSourceViewID>WOT</DataSourceViewID>
-            <TableID>dbo_Shells</TableID>
+            <TableID>dbo_ShellStats</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -64,14 +84,14 @@
     <MeasureGroup>
       <ID>Tank Stats</ID>
       <Partitions>
-        <Partition dwd:design-time-name="0ad2557c-d9f9-428b-9df4-bb5670267ee4">
+        <Partition dwd:design-time-name="f965c77f-69de-4c78-8e89-fbe0c5f51788">
           <ID>Tank Stats</ID>
           <Name>Tank Stats</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bd435cc6-f034-4843-b696-b72109027f5f">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="de813700-381b-478e-a074-de3c5c816044">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_TankStats</TableID>
           </Source>
@@ -84,14 +104,14 @@
     <MeasureGroup>
       <ID>TT Cs</ID>
       <Partitions>
-        <Partition dwd:design-time-name="3fa8f960-6b91-457e-9309-523e087e060e">
+        <Partition dwd:design-time-name="f74680d8-37c0-4655-b48f-e96f2c1e52da">
           <ID>TT Cs</ID>
           <Name>TT Cs</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="12600105-3bcb-4df0-b4db-736048108443">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="53bed88f-908c-4451-acf7-06be2e08939d">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_TTCs</TableID>
           </Source>
@@ -104,14 +124,14 @@
     <MeasureGroup>
       <ID>User Stats</ID>
       <Partitions>
-        <Partition dwd:design-time-name="c3c4c99d-4a82-4f4e-a714-166109f91274">
+        <Partition dwd:design-time-name="4c8c2524-7abc-49d1-ac68-bbdb9f72d8b1">
           <ID>User Stats</ID>
           <Name>User Stats</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="993224d3-91b2-46b3-aed8-b17ee39b15cb">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a6c572cb-42dc-4d4d-be44-9505319c7a0f">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_UserStats</TableID>
           </Source>
@@ -122,18 +142,18 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>Weapons</ID>
+      <ID>Weapon Stats</ID>
       <Partitions>
-        <Partition dwd:design-time-name="b30eb22d-dda9-495a-b236-22753e563a97">
-          <ID>Weapons</ID>
-          <Name>Weapons</Name>
+        <Partition dwd:design-time-name="34d483b0-c7d9-4c84-9372-87c1200a8a14">
+          <ID>Weapon Stats</ID>
+          <Name>Weapon Stats</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8cec4465-a075-41ed-b079-b0ef31d2b928">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fc926922-dcf8-4955-886f-0edb43db8caf">
             <DataSourceViewID>WOT</DataSourceViewID>
-            <TableID>dbo_Weapons</TableID>
+            <TableID>dbo_WeaponStats</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>

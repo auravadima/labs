@@ -20,12 +20,24 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Tanks.dim</Name>
-      <FullPath>Tanks.dim</FullPath>
+      <Name>Items.dim</Name>
+      <FullPath>Items.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Maps.dim</Name>
+      <FullPath>Maps.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Users.dim</Name>
       <FullPath>Users.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Shells.dim</Name>
+      <FullPath>Shells.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Tanks.dim</Name>
+      <FullPath>Tanks.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Weapons.dim</Name>
