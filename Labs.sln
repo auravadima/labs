@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Databa
 EndProject
 Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Cube", "Cube\Cube.dwproj", "{D733B75C-C91D-4734-A559-2F69163E1FA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba78", "Laba78\Laba78.csproj", "{CD527F8B-2E3D-4BDD-B9C2-E377EA0E44BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,12 @@ Global
 		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Release|Any CPU.ActiveCfg = Development
 		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Release|Any CPU.Build.0 = Development
 		{D733B75C-C91D-4734-A559-2F69163E1FA0}.Release|Any CPU.Deploy.0 = Development
+		{CD527F8B-2E3D-4BDD-B9C2-E377EA0E44BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD527F8B-2E3D-4BDD-B9C2-E377EA0E44BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD527F8B-2E3D-4BDD-B9C2-E377EA0E44BD}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD527F8B-2E3D-4BDD-B9C2-E377EA0E44BD}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{CD527F8B-2E3D-4BDD-B9C2-E377EA0E44BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD527F8B-2E3D-4BDD-B9C2-E377EA0E44BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
