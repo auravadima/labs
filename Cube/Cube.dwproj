@@ -43,6 +43,10 @@
       <Name>Weapons.dim</Name>
       <FullPath>Weapons.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>

@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d9340f44-0585-4292-b120-3abba1df25a5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="92dd0148-499c-4012-aaf5-f03e0482b6ea" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Tanks</ID>
-  <Name>Танки</Name>
+  <Name>Tanks</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6350" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4102" scrolltop="-6323" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11245" y="14949" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01cc0000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-6350</Value>
+      <Value>-6323</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,35 +68,35 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="aa810e53-ccb3-4b65-b927-661fac250c59">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="74960367-5431-45ab-a31b-2c9645e99fc1">
     <DataSourceViewID>WOT</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="45555169-9530-46dc-ae5d-98c65b3b3d31">
+  <ErrorConfiguration dwd:design-time-name="05bc9a92-a5aa-48b1-a275-67d182206008">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="359b9f69-63cd-4065-8789-e3080b5a8df9">
+    <Attribute dwd:design-time-name="66aa56c3-c315-40bc-be65-3fde02b83ef0">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2f7bb5ce-4ffc-40f0-a2f1-56427fed9cd6">
+        <KeyColumn dwd:design-time-name="8f1d702d-c325-4a85-a258-494a4d27a150">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e12b162f-1ea0-4ba4-8834-6839e6231ee4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ef42edb-f77a-4f2f-a17e-1a9b4978d2e8">
             <TableID>dbo_Tanks</TableID>
             <ColumnID>Id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="b8aedc3e-f6f4-4991-8dc4-126fc106641d">
+        <AttributeRelationship dwd:design-time-name="70c79084-d592-4fd3-a77f-671b3d139f4a">
           <AttributeID>Name</AttributeID>
           <Name>Name_</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5cecfc28-102c-4712-94e0-312273412cfe">
+        <AttributeRelationship dwd:design-time-name="f3dfe0a2-6298-41ed-8b52-f3a6458607b6">
           <AttributeID>LVL</AttributeID>
           <Name>Уровень</Name>
         </AttributeRelationship>
@@ -106,14 +106,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f777809a-4eb2-4e03-b8cf-debce0fd2358">
+    <Attribute dwd:design-time-name="341696ce-9e64-48f7-9620-d88fd4e4612a">
       <ID>Name</ID>
       <Name>Название</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="17e28670-43bc-48e5-b7e8-cac626727afd">
+        <KeyColumn dwd:design-time-name="d309859c-6564-43ef-a4f4-ce75faffea32">
           <DataType>WChar</DataType>
           <DataSize>120</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="296dc816-e73d-4651-a575-5e8499190bb7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b283735-5912-4d2c-a208-eb763f5c8940">
             <TableID>dbo_Tanks</TableID>
             <ColumnID>Name</ColumnID>
           </Source>
@@ -122,13 +122,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7ea6de9d-0ae3-4dad-84ff-84f4f5b7f936">
+    <Attribute dwd:design-time-name="e7bef48d-8ada-4cda-9447-470f35035962">
       <ID>LVL</ID>
       <Name>Уровень</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0fcbdc87-2b14-4c13-af5a-d2c07625a913">
+        <KeyColumn dwd:design-time-name="34431674-1793-4b7a-9203-2b7a445bc2bc">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="54e52317-8327-4252-b852-7cc6fb9a0f45">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aac942d3-e103-4e85-a8b9-4a9b7535b973">
             <TableID>dbo_Tanks</TableID>
             <ColumnID>LVL</ColumnID>
           </Source>

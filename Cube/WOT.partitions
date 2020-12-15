@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e47f888e-3300-4627-8732-ff270a59b2f4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bc081b53-3dc5-4ba1-ae7e-ac4bca025620" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>WOT</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Items Info</ID>
       <Partitions>
-        <Partition dwd:design-time-name="f24d2d1e-ecc6-4115-aa38-b31aab3aa904">
+        <Partition dwd:design-time-name="8ffb2d89-0484-4998-bf0e-e4350527c8e8">
           <ID>Items Info</ID>
           <Name>Items Info</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="41f3ada6-9d0d-41e4-ab1b-ce68fd99a424">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="04731f08-97ad-46d8-a426-274f9706069a">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_ItemsInfo</TableID>
           </Source>
@@ -24,14 +24,14 @@
     <MeasureGroup>
       <ID>Map Info</ID>
       <Partitions>
-        <Partition dwd:design-time-name="c6133e75-7d29-479f-b84e-52c95d1d7b67">
+        <Partition dwd:design-time-name="01f62770-f7d5-4033-8d6e-4b21bc1cfa6e">
           <ID>Map Info</ID>
           <Name>Map Info</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="59fdfcfa-835c-404a-bf51-d0e38b73d8ba">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="93ac08c9-187d-4d1c-8a3b-f3376d050ea2">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_MapInfo</TableID>
           </Source>
@@ -44,14 +44,14 @@
     <MeasureGroup>
       <ID>Operations</ID>
       <Partitions>
-        <Partition dwd:design-time-name="f1cbf295-b89e-4dcd-9f57-f67565a1454f">
+        <Partition dwd:design-time-name="b430e76d-1b33-4619-bd2e-9eb575cd5ca5">
           <ID>Operations</ID>
           <Name>Operations</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f4ccf426-47d4-4bd2-8cc3-55362fa95136">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dc827128-2ee4-41db-af12-38614252f86d">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_Operations</TableID>
           </Source>
@@ -64,14 +64,14 @@
     <MeasureGroup>
       <ID>Shell Stats</ID>
       <Partitions>
-        <Partition dwd:design-time-name="a42e3e82-4976-4768-9ea2-da0df3bec9bb">
+        <Partition dwd:design-time-name="8d718c0c-3432-47b3-a974-e40b75558e94">
           <ID>Shell Stats</ID>
           <Name>Shell Stats</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="07c6b854-bc59-4326-9572-4ae383a0aa76">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="be42bd18-af02-41d0-bf16-4a2e37aa9bdc">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_ShellStats</TableID>
           </Source>
@@ -82,36 +82,16 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>Tank Stats</ID>
-      <Partitions>
-        <Partition dwd:design-time-name="f965c77f-69de-4c78-8e89-fbe0c5f51788">
-          <ID>Tank Stats</ID>
-          <Name>Tank Stats</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-          <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="de813700-381b-478e-a074-de3c5c816044">
-            <DataSourceViewID>WOT</DataSourceViewID>
-            <TableID>dbo_TankStats</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-        </Partition>
-      </Partitions>
-    </MeasureGroup>
-    <MeasureGroup>
       <ID>TT Cs</ID>
       <Partitions>
-        <Partition dwd:design-time-name="f74680d8-37c0-4655-b48f-e96f2c1e52da">
+        <Partition dwd:design-time-name="027f04f0-6ffa-492b-b3ad-5623d132ba47">
           <ID>TT Cs</ID>
           <Name>TT Cs</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="53bed88f-908c-4451-acf7-06be2e08939d">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ecafa87f-f269-4e11-a379-cabc9a5701c0">
             <DataSourceViewID>WOT</DataSourceViewID>
             <TableID>dbo_TTCs</TableID>
           </Source>
@@ -122,18 +102,18 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>User Stats</ID>
+      <ID>Weapon Stats</ID>
       <Partitions>
-        <Partition dwd:design-time-name="4c8c2524-7abc-49d1-ac68-bbdb9f72d8b1">
-          <ID>User Stats</ID>
-          <Name>User Stats</Name>
+        <Partition dwd:design-time-name="8ae2a118-272d-44e0-9203-df855c46ee04">
+          <ID>Weapon Stats</ID>
+          <Name>Weapon Stats</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a6c572cb-42dc-4d4d-be44-9505319c7a0f">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="359386b1-a791-4ffc-b9f4-0ffdb7c58cbe">
             <DataSourceViewID>WOT</DataSourceViewID>
-            <TableID>dbo_UserStats</TableID>
+            <TableID>dbo_WeaponStats</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -142,18 +122,18 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>Weapon Stats</ID>
+      <ID>User Stats</ID>
       <Partitions>
-        <Partition dwd:design-time-name="34d483b0-c7d9-4c84-9372-87c1200a8a14">
-          <ID>Weapon Stats</ID>
-          <Name>Weapon Stats</Name>
+        <Partition dwd:design-time-name="78aeca49-fadd-4108-b7cc-07a54cdee325">
+          <ID>User Stats</ID>
+          <Name>User Stats</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fc926922-dcf8-4955-886f-0edb43db8caf">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="25ffc239-e1da-4403-ad36-865c12b05873">
             <DataSourceViewID>WOT</DataSourceViewID>
-            <TableID>dbo_WeaponStats</TableID>
+            <TableID>dbo_UserStats</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>

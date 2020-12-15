@@ -67,6 +67,13 @@
     <Build Include="Operations.sql" />
     <Build Include="UserStats.sql" />
     <Build Include="TankStats.sql" />
+    <Build Include="Date.sql" />
+    <Build Include="Items.sql" />
+    <Build Include="ItemsInfo.sql" />
+    <Build Include="MapInfo.sql" />
+    <Build Include="Maps.sql" />
+    <Build Include="ShellStats.sql" />
+    <Build Include="WeaponStats.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Database.publish.xml" />

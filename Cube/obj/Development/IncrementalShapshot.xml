@@ -19,63 +19,70 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>5J3mo6VH6W3o7XrwOV+/2WOV+E8=01.12.2020 19:39:5301.12.2020 19:39:53</TimeStamp>
+        <TimeStamp>V7pJCGbwd24sqEm26zmX0S90VGs=15.12.2020 10:26:3615.12.2020 10:26:36</TimeStamp>
         <ID>
           <String>WOT</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>QQpa8zCDFJXVLSckJ7hvuvEhhYk=01.12.2020 20:08:0101.12.2020 19:40:07</TimeStamp>
+        <TimeStamp>DDoqDKg3BQkPHDwdjBNKVxvSb7M=15.12.2020 10:37:1015.12.2020 10:26:50</TimeStamp>
         <ID>
           <String>WOT</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>HsTo4jHj1RLs5EoIy2dBFlFM10Q=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <TimeStamp>fLTnpNpctDkbgn5qVfeZEDlEJdk=15.12.2020 10:37:1015.12.2020 10:27:13</TimeStamp>
         <ID>
           <String>Items</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>zgepzdy+QYveeQEZBQkyB4RQjUg=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <TimeStamp>HupFgIqH1Uf65EIMztkiP0ISodc=15.12.2020 10:37:1015.12.2020 10:27:13</TimeStamp>
         <ID>
           <String>Maps</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>mQqDcC6QDAibmvLI274qsKPC5VI=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <TimeStamp>RDOVe1fKtSFkKVmZEFpnPbKApsU=15.12.2020 10:38:4115.12.2020 10:27:13</TimeStamp>
         <ID>
           <String>Users</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>jFmLIAS88E3qZV4UD1M/WD4tblk=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <TimeStamp>xnuytJzqql2+dMfeA/0uIsCGJH8=15.12.2020 10:37:1015.12.2020 10:27:13</TimeStamp>
         <ID>
           <String>Shells</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Y12dVabKX+W+wkOS2FclN6AQ0/Q=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <TimeStamp>OGK5r6M65xRitGjZGO0hxlKbxgo=15.12.2020 10:37:1015.12.2020 10:27:13</TimeStamp>
         <ID>
           <String>Tanks</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>4CgNpyJqzddj01qYSNLWwsJvV/U=01.12.2020 20:28:2801.12.2020 20:21:55</TimeStamp>
+        <TimeStamp>VN/4LadqGR4DXpC6BxmO9jk0yFY=15.12.2020 10:37:1015.12.2020 10:27:13</TimeStamp>
         <ID>
           <String>Weapons</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wtfo6A2Gm1mwCJ/nDLxZwVMf7xY=15.12.2020 11:05:2715.12.2020 10:36:52</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>YNW/Eq7HYhskOI1rQQW37kBI3Q8=01.12.2020 20:30:4201.12.2020 20:21:55epdlb4RwUPCpTP33kb7jDV6YsP8=01.12.2020 20:21:5601.12.2020 20:21:55</TimeStamp>
+        <TimeStamp>aM1Q25chyEp5g7F07KVcU3OUfTE=15.12.2020 11:03:4315.12.2020 10:27:13MSnpY+MmgU3BMyWtZYlP82RnmSg=15.12.2020 10:27:1415.12.2020 10:27:13</TimeStamp>
         <ID>
           <String>WOT</String>
         </ID>
@@ -104,7 +111,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>w6ofir495jjsRVieTXLrayeJ+8Y=09.11.2020 13:08:0422.10.2020 12:49:32</TimeStamp>
+      <TimeStamp>UREZYpcG7D3lJ6KNu5n4xUTlhC4=15.12.2020 10:37:1022.10.2020 12:49:32</TimeStamp>
       <ID>
         <String>Cube</String>
       </ID>
@@ -113,5 +120,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2020-12-06T11:54:33.19Z</LastDeployed>
+  <LastDeployed>2020-12-15T04:05:33.39Z</LastDeployed>
 </DeploymentSnapshot>

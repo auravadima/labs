@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Tanks]
 (
 	[Id] INT NOT NULL PRIMARY KEY,
-	[Name] NVARCHAR(120),
-	[LVL] INT
+	[Name] NVARCHAR(120) NOT NULL,
+	[LVL] INT NOT NULL
 )

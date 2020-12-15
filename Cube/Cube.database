@@ -1,4 +1,4 @@
-﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="53a5dc6b-f468-4e18-8e57-89debc82b9c9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="29b78d5e-d28b-40b8-be67-48331b6c523e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Cube</ID>
   <Name>Cube</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -18,11 +18,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SubjectDSVID</Name>
-      <Value>Cube</Value>
+      <Value>WOT</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SubjectDSVName</Name>
-      <Value>Cube</Value>
+      <Value>WOT</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SubjectOwningSchema</Name>
@@ -46,7 +46,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SubjectPopulateTimeTable</Name>
-      <Value>1</Value>
+      <Value>0</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:PKeyPrefix</Name>
@@ -98,7 +98,7 @@
   <DataSourceViews />
   <Roles />
   <DatabasePermissions>
-    <DatabasePermission dwd:design-time-name="0209ee91-8809-401b-b5bf-6c5c4156d9af">
+    <DatabasePermission dwd:design-time-name="b27e0d02-0f89-4ba5-bfb2-c433ab6480b4">
       <ID>DatabasePermission</ID>
       <Name>DatabasePermission</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -107,7 +107,7 @@
       <ReadDefinition>Allowed</ReadDefinition>
       <Read>Allowed</Read>
     </DatabasePermission>
-    <DatabasePermission dwd:design-time-name="95ec1fe1-d8a3-4d6b-99a6-e7733eb139f5">
+    <DatabasePermission dwd:design-time-name="4c7bbff7-1338-4479-9daa-b95612407e77">
       <ID>DatabasePermission 1</ID>
       <Name>DatabasePermission 1</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -116,7 +116,7 @@
       <Process>true</Process>
       <Read>Allowed</Read>
     </DatabasePermission>
-    <DatabasePermission dwd:design-time-name="deae0f0e-4531-4aac-a3f7-e4e6eae37b21">
+    <DatabasePermission dwd:design-time-name="aaa2cc16-034d-436c-b263-812cdb47b97d">
       <ID>DatabasePermission 2</ID>
       <Name>DatabasePermission 2</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>

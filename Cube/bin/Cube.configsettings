@@ -30,6 +30,9 @@
       <Dimension>
         <ID>Weapons</ID>
       </Dimension>
+      <Dimension>
+        <ID>Date</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
@@ -68,14 +71,6 @@
             </Partitions>
           </MeasureGroup>
           <MeasureGroup>
-            <ID>Tank Stats</ID>
-            <Partitions>
-              <Partition>
-                <ID>Tank Stats</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
             <ID>TT Cs</ID>
             <Partitions>
               <Partition>
@@ -84,18 +79,18 @@
             </Partitions>
           </MeasureGroup>
           <MeasureGroup>
-            <ID>User Stats</ID>
-            <Partitions>
-              <Partition>
-                <ID>User Stats</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-          <MeasureGroup>
             <ID>Weapon Stats</ID>
             <Partitions>
               <Partition>
                 <ID>Weapon Stats</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>User Stats</ID>
+            <Partitions>
+              <Partition>
+                <ID>User Stats</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
